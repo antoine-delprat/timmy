@@ -1,9 +1,6 @@
 class GamesController < ApplicationController
   def index
+    @child = Child.find(params[:child_id])
     @games = Game.all
-  end
-
-  def show
-    @game = Game.find(params[:id])
   end
 end

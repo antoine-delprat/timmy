@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  resources :children, only: [:new, :create, :index, :show]
-  resources :games, only: [:index, :show]
+  resources :children, only: %i[new create index show] do
+    resources :games, only: %i[index]
+    resources :child_games, only: [:create]
+  end
+  resources :child_games, only: [:show]
 end
