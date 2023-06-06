@@ -1,0 +1,13 @@
+
+<div class="container">
+    <h1>Ajuter un enfant </h1>
+    <%= simple_form_for @child do |f| %>
+      <%= f.input :first_name %>
+      <%= f.input :age %>
+      <%= f.input :photo, as: :file %>
+      <%= f.input :alarm %>
+      <%= f.submit "Valider", class: "btn btn-warning" %>
+    <% end %>
+  </div>
+
+<%= link_to "retour", children_path %>

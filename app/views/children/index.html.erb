@@ -1,1 +1,11 @@
 <h1>Qui joue</h1>
+
+
+<ul>
+  <% @children.each do |child| %>
+    <li><%= link_to child.first_name, child_path(child) %></li>
+  <% end %>
+  </ul>
+
+
+  <%= link_to "Ajouter un enfant", new_child_path %>
