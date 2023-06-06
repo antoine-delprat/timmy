@@ -8,4 +8,5 @@ class ChildGamesController < ApplicationController
   def show
     @child_game = ChildGame.find(params[:id])
   end
+
 end
