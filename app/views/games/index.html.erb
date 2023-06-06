@@ -2,5 +2,6 @@
 
 <ul>
   <% @games.each do |game| %>
-  <li><%= link_to game.name, child_game_path %></li>
+  <li><%= button_to game.name, child_child_games_path(@child, game_id: game.id) %></li>
+  <% end %>
 </ul>
