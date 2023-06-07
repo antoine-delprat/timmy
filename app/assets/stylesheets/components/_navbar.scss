@@ -1,5 +1,17 @@
 .navbar {
-  background-color: white;
+  background-color: lightgray;
 }
 
+.btn-circle {
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+}
 
+.dropdown-toggle:after {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: $timmy-orange;
+}
