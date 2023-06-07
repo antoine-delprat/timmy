@@ -4,5 +4,5 @@ class Child < ApplicationRecord
   has_many :games, through: :child_games
   has_one_attached :avatar
   validates :first_name, presence: true
-  validates :age, presence: true
+  validates :birth_date, presence: true
 end
