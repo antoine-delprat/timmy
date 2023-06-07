@@ -1,9 +1,12 @@
 <h1>Qui joue</h1>
 
+<%= render 'shared/menu' %>
+
+<br>
 
 <ul>
   <% @children.each do |child| %>
-    <li><%= link_to child.first_name, child_path(child) %></li>
+    <li><%= link_to child.first_name, child_games_path(child) %></li>
   <% end %>
   </ul>
 
