@@ -1,33 +1,35 @@
-#cardboard .card {
-  height: 150px;
-  background-image: url("/app/assets/images/games/memory/carte.jpeg");
-}
+#cardboard {
 
-#cardboard .card.card-won, #cardboard .card.card-revealed {
-  pointer-events: none;
-}
+  .card {
+    height: 150px;
+    background-image: url("/app/assets/images/games/memory/carte.jpeg");
+  }
+  .card.card-revealed, .card.card-won {
+    pointer-events: none;
+  }
 
-#cardboard .card.one.card-revealed, #cardboard .card.one.card-won {
-  background-image: url("/app/assets/images/games/memory/antilope.jpeg");
-}
-#cardboard .card.two.card-revealed, #cardboard .card.two.card-won {
-  background-image: url("/app/assets/images/games/memory/elephant.jpeg");
-}
-#cardboard .card.three.card-revealed, #cardboard .card.three.card-won {
-  background-image: url("/app/assets/images/games/memory/guepard.jpeg");
-}
-#cardboard .card.four.card-revealed, #cardboard .card.four.card-won {
-  background-image: url("/app/assets/images/games/memory/hippopotame.jpeg");
-}
-#cardboard .card.five.card-revealed, #cardboard .card.five.card-won {
-  background-image: url("/app/assets/images/games/memory/lion.jpeg");
-}
-#cardboard .card.six.card-revealed, #cardboard .card.six.card-won {
-  background-image: url("/app/assets/images/games/memory/rhinoceros.jpeg");
-}
-#cardboard .card.seven.card-revealed, #cardboard .card.seven.card-won {
-  background-image: url("/app/assets/images/games/memory/tigre.jpeg");
-}
-#cardboard .card.eight.card-revealed, #cardboard .card.eight.card-won {
-  background-image: url("/app/assets/images/games/memory/zebre.jpeg");
+  .card.one.card-revealed, .card.one.card-won {
+    background-image: url("/app/assets/images/games/memory/antilope.jpeg");
+  }
+  .card.two.card-revealed, .card.two.card-won {
+    background-image: url("/app/assets/images/games/memory/elephant.jpeg");
+  }
+  .card.three.card-revealed, .card.three.card-won {
+    background-image: url("/app/assets/images/games/memory/guepard.jpeg");
+  }
+  .card.four.card-revealed, .card.four.card-won {
+    background-image: url("/app/assets/images/games/memory/hippopotame.jpeg");
+  }
+  .card.five.card-revealed, .card.five.card-won {
+    background-image: url("/app/assets/images/games/memory/lion.jpeg");
+  }
+  .card.six.card-revealed, .card.six.card-won {
+    background-image: url("/app/assets/images/games/memory/rhinoceros.jpeg");
+  }
+  .card.seven.card-revealed, .card.seven.card-won {
+    background-image: url("/app/assets/images/games/memory/tigre.jpeg");
+  }
+  .card.eight.card-revealed, .card.eight.card-won {
+    background-image: url("/app/assets/images/games/memory/zebre.jpeg");
+  }
 }

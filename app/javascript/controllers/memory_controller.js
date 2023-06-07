@@ -13,14 +13,11 @@ export default class extends Controller {
             // puis on vérifie si le jeu est fini, càd si toutes les cartes ont la classe 'card-won>'
           // si elles n'ont pas les mêmes, on attend 2 secondes avant de leur retirer la class 'card-revealed'
 
-      event.target.innerText = "revealed"
       event.target.classList.add("card-revealed")
 
     if (document.querySelectorAll(".card.card-revealed").length % 2 == 0) {
       if (document.querySelectorAll(".card.card-revealed")[0].classList.value === document.querySelectorAll(".card.card-revealed")[1].classList.value) {
-        document.querySelectorAll(".card.card-revealed")[0].innerText = "won"
         document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
-        document.querySelectorAll(".card.card-revealed")[0].innerText = "won"
         document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
 
         if (document.querySelectorAll(".card.card-won").length == 16) {
@@ -29,9 +26,7 @@ export default class extends Controller {
       }
       else {
         setTimeout(() => {
-          document.querySelectorAll(".card.card-revealed")[0].innerText = "ceci est une carte"
           document.querySelectorAll(".card.card-revealed")[0].classList.remove("card-revealed")
-          document.querySelectorAll(".card.card-revealed")[0].innerText = "ceci est une carte"
           document.querySelectorAll(".card.card-revealed")[0].classList.remove("card-revealed")
         }, 2000);
       }
