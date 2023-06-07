@@ -1,11 +1,4 @@
-<h1>Liste des jeux</h1>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  Breakfast
+</div>
 
-
-<ul>
-  <% @games.each do |game| %>
-  <li><%= button_to game.name, child_game_child_games_path(@child, game_id: game.id) %></li>
-  <% end %>
-</ul>
-
-<br>
-<%= link_to "Choix du profil", children_path %>
