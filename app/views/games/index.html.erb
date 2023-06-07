@@ -1,13 +1,17 @@
-<div class="card-game">
-  <div>
-    <div class="photo-game" style="background-image: linear-gradient(rgba(0,0,0,0.3),
-      rgba(0,0,0,0.3)), url(<%= cl_image_path(Game.first.photo.key) %>)">
+<div class="grid-game">
+  <% @games.each do |game| %>
+    <div class="card-game">
+      <div class="photo-game" style="background-image: linear-gradient(rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)), url(<%= cl_image_path(game.photo.key) %>)">
+        <div class="legend">
+          <%= "Ce jeux est super" %>
+          <i class="fa-solid fa-brain"></i>
+        </div>
+      </div>
+      <div class="bottom-card">
+        <%= game.name %>
+        <i class="fa-solid fa-brain"></i>
+      </div>
     </div>
-    <div>
-      <%= "Ce jeux est super" %>
-    </div>
-  </div>
-  <div>
-
-  </div>
+  <% end %>
 </div>
