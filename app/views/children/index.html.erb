@@ -1,14 +1,24 @@
-<h1>Qui joue</h1>
-
-<%= render 'shared/menu' %>
-
-<br>
-
-<ul>
-  <% @children.each do |child| %>
-    <li><%= link_to child.first_name, child_games_path(child) %></li>
-  <% end %>
-  </ul>
 
 
-  <%= link_to "Ajouter un enfant", new_child_path %>
+<div class="background-index-profil">
+    <div class="who">
+        <h1>Qui va jouer aujourd'hui?</h1>
+    </div>
+
+    <div>
+        <%= render 'shared/menu' %>
+    </div>
+        <br>
+    <div>
+        <ul>
+          <% @children.each do |child| %>
+            <li><%= link_to child.first_name, child_games_path(child) %></li>
+          <% end %>
+        </ul>
+    </div>
+
+    <div>
+        <%= link_to "Ajouter un enfant", new_child_path %>
+    </div>
+
+</div>
