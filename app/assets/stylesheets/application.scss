@@ -10,7 +10,6 @@
 body {
   background-color: $timmy-blue;
 }
-
 body:has(#game) {
   background-color: $timmy-green;
 }

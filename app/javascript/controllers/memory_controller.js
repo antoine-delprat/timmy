@@ -3,10 +3,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["card"]
 
-  hidenav() {
-    document.getElementsByClassName(".navbar").style.dysplay = none;
-  }
-
   reveal(event) {
     // au clic sur une image, on ajoute la class 'card-revealed'
       // si une seule carte a été cliquée (càd a la class 'card-revealed')
