@@ -1,11 +1,10 @@
 <div class="grid-game">
   <% @games.each do |game| %>
     <div class="card-game">
-      <div class="photo-game" style="background-image: linear-gradient(rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)), url(<%= cl_image_path(game.photo.key) %>)">
+      <div class="photo-game" style="background-image: url(<%= cl_image_path(game.photo.key) %>)">
         <div class="legend">
           <%= "#{game.description}" %>
-          <i class="fa-solid fa-brain"></i>
+          <i class="fa-solid fa-brain fa-2xl"></i>
         </div>
       </div>
       <div class="bottom-card">

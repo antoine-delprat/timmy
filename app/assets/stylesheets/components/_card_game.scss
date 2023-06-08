@@ -44,8 +44,10 @@
 
 .card-game {
   padding: 30px;
+  padding-bottom: 0px;
   background-color: $timmy-orange;
   border-radius: 34px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .photo-game {
@@ -60,7 +62,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .legend {
@@ -69,18 +71,19 @@
   align-items: center;
   width: 100%;
   padding: 0 5px;
+  border-radius: 0px 0px 10px 10px;
   color: white;
   background-color: rgba(255, 255, 255, 0.42);
-  // rgba(255 255 255 / 50%)
+  flex-grow: 1;
 }
 
 .bottom-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 10px;
+  padding: 17px 1px;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.9em;
   color: white;
     p {
       margin-bottom: 0px;
@@ -90,6 +93,8 @@
 .play-btn {
   color: $timmy-orange;
   padding: 8px 24px;
+  padding-left: 30px;
+  padding-top: 4px;
   border-radius: 50px;
   background: white;
   border: 1px solid white;
