@@ -1,0 +1,156 @@
+#game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cardboard {
+  .line {
+    display: flex;
+  }
+
+  #one {
+    margin-right: 46px;
+    margin-left: 31px;
+    margin-top: 15px;
+    transform: rotate(-3deg);
+  }
+  #two {
+    margin-right: 37px;
+    margin-top: 9px;
+    transform: rotate(1deg);
+  }
+  #three {
+    margin-right: 40px;
+    transform: rotate(3deg);
+  }
+  #four {
+    margin-top: 6px;
+    transform: rotate(-2deg);
+  }
+  #five {
+    margin-right: 49px;
+    margin-top: 6px;
+    transform: rotate(1deg);
+  }
+  #six {
+    margin-right: 55px;
+    margin-top: 3px;
+    transform: rotate(-3deg);
+  }
+  #seven {
+    margin-right: 78px;
+    margin-top: 9px;
+    transform: rotate(2deg);
+  }
+  #eight {
+    margin-top: 4px;
+    transform: rotate(4deg);
+  }
+  #nine {
+    margin-right: 60px;
+    margin-left: 21px;
+    margin-top: 4px;
+    transform: rotate(-2deg);
+  }
+  #ten {
+    margin-right: 49px;
+    transform: rotate(-8deg);
+  }
+  #eleven {
+    margin-right: 37px;
+    margin-top: 6px;
+    transform: rotate(5deg);
+  }
+  #twelve {
+    margin-top: 3px;
+    transform: rotate(-3deg);
+  }
+  #thirteen {
+    margin-right: 53px;
+    margin-left: 11px;
+    margin-top: 3px;
+    transform: rotate(1deg);
+  }
+  #fourteen {
+    margin-right: 60px;
+    margin-top: 10px;
+    transform: rotate(-3deg);
+  }
+  #fifteen {
+    margin-right: 65px;
+    margin-top: 6px;
+    transform: rotate(2deg);
+  }
+  #sixteen {
+    margin-top: 11px;
+    transform: rotate(5deg);
+  }
+
+  .card {
+    width: 115px;
+    height: 115px;
+    margin-bottom: 22px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    background-image: url("games/memory/carte.jpeg");
+    background-size: contain;
+    box-shadow: 0px 0px 8px 3px #0000006e;
+  }
+  .card.card-revealed, .card.card-won {
+    pointer-events: none;
+  }
+  .card.card-revealed {
+    box-shadow: 0px 0px 13px 10px #ffffffcf;
+  }
+
+  .card.one.card-revealed {
+    background-image: url("games/memory/antilope.jpeg");
+  }
+  .card.one.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/antilope.jpeg");
+  }
+  .card.two.card-revealed {
+    background-image: url("games/memory/elephant.jpeg");
+  }
+  .card.two.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/elephant.jpeg");
+  }
+  .card.three.card-revealed {
+    background-image: url("games/memory/guepard.jpeg");
+  }
+  .card.three.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/guepard.jpeg");
+  }
+  .card.four.card-revealed {
+    background-image: url("games/memory/hippopotame.jpeg");
+  }
+  .card.four.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/hippopotame.jpeg");
+  }
+  .card.five.card-revealed {
+    background-image: url("games/memory/lion.jpeg");
+  }
+  .card.five.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/lion.jpeg");
+  }
+  .card.six.card-revealed {
+    background-image: url("games/memory/rhinoceros.jpeg");
+  }
+  .card.six.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/rhinoceros.jpeg");
+  }
+  .card.seven.card-revealed {
+    background-image: url("games/memory/tigre.jpeg");
+  }
+  .card.seven.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/tigre.jpeg");
+  }
+  .card.eight.card-revealed {
+    background-image: url("games/memory/zebre.jpeg");
+  }
+  .card.eight.card-won {
+    background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/zebre.jpeg");
+  }
+}

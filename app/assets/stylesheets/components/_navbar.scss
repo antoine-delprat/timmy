@@ -1,12 +1,30 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  background-color: transparent;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.btn-circle {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.btn-circle:hover {
+  background-color: $timmy-orange;
+}
+
+.dropdown-toggle:after {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: $timmy-orange;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: white ;
+  color: $timmy-orange;
 }

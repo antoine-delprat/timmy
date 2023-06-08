@@ -1,0 +1,20 @@
+.children-container {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px white;
+  font-size: 2rem;
+  text-decoration: none;
+  transition-duration: 0.1s;
+
+  h2 {
+    color: white;
+
+  }
+
+  img {
+
+    border-radius: 150px;
+  }
+}
