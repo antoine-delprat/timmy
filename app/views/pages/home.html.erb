@@ -1,9 +1,14 @@
-  <div class="navbar-homepage">
-    <div><h1>Timmy !</h1></div>
-    <div class="btn-connexion">Connexion</div>
+  <div class="navbar-homepage-wrapper">
+    <div class="navbar-homepage container">
+      <div><h1>Timmy !</h1></div>
+      <div> <%= link_to "Connexion", new_user_session_path, class: "btn-connexion" %></div>
+    </div>
   </div>
-  <div class= container-homepage>
-    <div><h2>Des jeux pour apprendre et progresser en s'amusant</h2></div>
-    <div class="cover-homepage"></div>
+
+  <div class="container-homepage container">
+    <div><h2 class="fw-bold text-center p-2">Des jeux pour apprendre et progresser en s'amusant</h2></div>
+    <div class="cover-homepage"> <%= image_tag "game.jpeg" %></div>
+    <div><p></p></div>
   </div>
-<div class="footer-home"></div>
+
+  <div class="footer-home"></div>

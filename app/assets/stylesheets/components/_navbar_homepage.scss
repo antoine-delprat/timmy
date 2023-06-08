@@ -1,8 +1,18 @@
+.navbar-homepage-wrapper {
+  background: $timmy-blue;
+}
+
 .navbar-homepage {
   display: flex;
   justify-content: space-between;
-  background: $timmy-blue;
   height: 50px;
   color: white;
   padding: 2px 10px;
+  align-items: center;
+}
+
+.navbar-homepage {
+  h1 {
+    font-size: 1.5rem;
+}
 }
