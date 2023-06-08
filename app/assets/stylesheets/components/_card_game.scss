@@ -5,6 +5,7 @@
   column-gap: 66px;
   padding: 66px;
   height: 90vh;
+  width: 100vw;
 }
 
 // Smallest device
@@ -56,14 +57,12 @@
   background-position: center;
   height: 400px;
   display: flex;
-  // justify-content: center;
   align-items: end;
   color: white;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 10px;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .legend {
@@ -71,7 +70,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 8px;
+  padding: 0 9px;
   border-radius: 0px 0px 10px 10px;
   color: white;
   background-color: rgba(102, 86, 86, 0.65);
@@ -102,17 +101,35 @@
 }
 
 .head-game {
-  text-align: center;
-  // display: flex;
-  // height: 10vh;
-  // width: 100vw;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 0px;
+  margin-top: 8px;
+  padding: 0px 22px;
   font-family: $headers-font;
   font-size: 2.7rem;
   color: white;
-  p {
-    margin-bottom: 0px;
-  }
+    p {
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+
+    i {
+      color: $timmy-blue;
+      background: $timmy-blue;
+      padding: 35px 10px;
+      border-radius: 50%;
+    }
+
+    .back-arrow {
+      color: white;
+      font-size: normal;
+      background: $timmy-orange;
+      padding: 35px 10px;
+      border-radius: 50%;
+      text-decoration: none;
+    }
 }
