@@ -22,7 +22,7 @@ export default class extends Controller {
         document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
 
         if (document.querySelectorAll(".card.card-won").length == 16) {
-          document.getElementById("cardboard").innerHTML = "<img src='https://i0.wp.com/www.blog-les-dauphins.com/wp-content/uploads/2014/04/dauphin_captif.jpg'>"
+          document.getElementById("modal-win").innerHTML = "<img src='https://i0.wp.com/www.blog-les-dauphins.com/wp-content/uploads/2014/04/dauphin_captif.jpg'>"
         }
       }, 1000);
 
