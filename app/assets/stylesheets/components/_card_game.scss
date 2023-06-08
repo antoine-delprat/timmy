@@ -1,7 +1,10 @@
 .grid-game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  row-gap: 66px;
+  column-gap: 66px;
+  padding: 66px;
+  // height: 100vh;
 }
 
 // Smallest device
@@ -39,6 +42,12 @@
   }
 }
 
+.card-game {
+  padding: 30px;
+  background-color: $timmy-orange;
+  border-radius: 34px;
+}
+
 .photo-game {
   background-size: cover;
   background-position: center;
@@ -50,21 +59,38 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .legend {
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
-  color: black;
-  background-color: white;
-  opacity: 0.5;
+  width: 100%;
+  padding: 0 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.42);
+  // rgba(255 255 255 / 50%)
 }
 
 .bottom-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 13px 10px;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+    p {
+      margin-bottom: 0px;
+    }
+}
+
+.play-btn {
+  color: $timmy-orange;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid white;
 }

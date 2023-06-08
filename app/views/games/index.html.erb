@@ -4,13 +4,13 @@
       <div class="photo-game" style="background-image: linear-gradient(rgba(0,0,0,0.3),
         rgba(0,0,0,0.3)), url(<%= cl_image_path(game.photo.key) %>)">
         <div class="legend">
-          <%= "Ce jeux est super" %>
+          <%= "#{game.description}" %>
           <i class="fa-solid fa-brain"></i>
         </div>
       </div>
       <div class="bottom-card">
-        <%= game.name %>
-        <i class="fa-solid fa-brain"></i>
+        <p><%= game.name %></p>
+        <p class="play-btn">jouer</p>
       </div>
     </div>
   <% end %>
