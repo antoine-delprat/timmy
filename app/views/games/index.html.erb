@@ -1,11 +1,29 @@
-<h1>Liste des jeux</h1>
-
-
-<ul>
+<div class="grid-game">
   <% @games.each do |game| %>
-  <li><%= button_to game.name, child_game_child_games_path(@child, game_id: game.id) %></li>
+    <%= link_to child_game_child_games_path(@child, game_id: game.id),
+      class:"card-game", data:{turbo_method: "post"} do %>
+      <div class="photo-game" style="background-image: url(<%= cl_image_path(game.photo.key) %>)">
+        <div class="legend">
+          <%= "#{game.description}" %>
+          <% if game.category == 'Mémoire'%>
+            <i class="fa-solid fa-brain fa-2xl"></i>
+          <% elsif game.category == 'Calcul'%>
+            <i class="fa-solid fa-calculator fa-2xl"></i>
+          <% elsif game.category == 'Logique'%>
+            <i class="fa-solid fa-gears fa-2xl"></i>
+          <% elsif game.category == 'Éveil'%>
+            <i class="fa-solid fa-lightbulb fa-2xl"></i>
+          <% elsif game.category == 'Rapidité'%>
+            <i class="fa-solid fa-gauge-high fa-2xl"></i>
+          <% elsif game.category == 'Écriture'%>
+            <i class="fa-solid fa-pen-nib fa-2xl"></i>
+          <% end %>
+        </div>
+      </div>
+      <div class="bottom-card">
+        <p><%= game.name %></p>
+        <p class="play-btn">jouer</p>
+      </div>
+    <% end %>
   <% end %>
-</ul>
-
-<br>
-<%= link_to "Choix du profil", children_path %>
+</div>
