@@ -4,11 +4,7 @@
   justify-content: center;
 }
 
-#modal-win {
-  position: absolute;
-}
-
-#cardboard {
+#cardboard, #modal-win {
   .line {
     display: flex;
   }
@@ -156,5 +152,68 @@
   }
   .card.eight.card-won {
     background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/zebre.jpeg");
+  }
+}
+
+#modal-bloc {
+  position: absolute;
+
+  #modal-win {
+    width: 760px;
+    height: 480px;
+    padding-top: 25px;
+    background-color: #1D8E36;
+    border-radius: 20px;
+
+    &:after {
+      position: fixed;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: -2;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    h1, h3 {
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 54px;
+    }
+
+    .card {
+        width: 150px;
+        height: 150px;
+        margin: 0px 120px 0px 0px;
+    }
+
+    .fa-star {
+      color: $timmy-yellow;
+      font-size: 50px;
+    }
+
+    .fa-house, .fa-rotate-right {
+      margin: 8px 13px 0px 12px;
+      border-radius: 20px;
+      box-shadow: 1px 2px 5px 1px #00000054;
+      padding: 14px;
+      background-color: $timmy-orange;
+      color: white;
+      font-size: 70px;
+    }
   }
 }
