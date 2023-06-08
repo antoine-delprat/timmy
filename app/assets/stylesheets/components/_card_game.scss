@@ -4,7 +4,7 @@
   row-gap: 66px;
   column-gap: 66px;
   padding: 66px;
-  // height: 100vh;
+  height: 90vh;
 }
 
 // Smallest device
@@ -71,7 +71,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 5px;
+  padding: 0 8px;
   border-radius: 0px 0px 10px 10px;
   color: white;
   background-color: rgba(102, 86, 86, 0.65);
@@ -99,4 +99,20 @@
   border-radius: 50px;
   background: white;
   border: 1px solid white;
+}
+
+.head-game {
+  text-align: center;
+  // display: flex;
+  // height: 10vh;
+  // width: 100vw;
+  // justify-content: center;
+  // align-items: center;
+  margin-bottom: 0px;
+  font-family: $headers-font;
+  font-size: 2.7rem;
+  color: white;
+  p {
+    margin-bottom: 0px;
+  }
 }

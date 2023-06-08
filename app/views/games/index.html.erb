@@ -1,3 +1,7 @@
+<div class="head-game">
+  <p><%= "A quel jeu veux-tu jouer ?" %></p>
+</div>
+
 <div class="grid-game">
   <% @games.each do |game| %>
     <%= link_to child_game_child_games_path(@child, game_id: game.id),
