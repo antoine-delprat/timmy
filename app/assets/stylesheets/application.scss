@@ -7,6 +7,14 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 
+body {
+  background-color: $timmy-blue;
+}
+
+body:has(#game) {
+  background-color: $timmy-green;
+}
+
 // Your CSS partials
 @import "components/index";
 @import "pages/index";

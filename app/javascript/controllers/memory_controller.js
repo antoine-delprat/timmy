@@ -3,6 +3,10 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["card"]
 
+  hidenav() {
+    document.getElementsByClassName(".navbar").style.dysplay = none;
+  }
+
   reveal(event) {
     // au clic sur une image, on ajoute la class 'card-revealed'
       // si une seule carte a été cliquée (càd a la class 'card-revealed')
@@ -17,18 +21,21 @@ export default class extends Controller {
 
     if (document.querySelectorAll(".card.card-revealed").length % 2 == 0) {
       if (document.querySelectorAll(".card.card-revealed")[0].classList.value === document.querySelectorAll(".card.card-revealed")[1].classList.value) {
+        setTimeout(() => {
         document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
         document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
 
         if (document.querySelectorAll(".card.card-won").length == 16) {
           document.getElementById("cardboard").innerHTML = "<img src='https://i0.wp.com/www.blog-les-dauphins.com/wp-content/uploads/2014/04/dauphin_captif.jpg'>"
         }
+      }, 1000);
+
       }
       else {
         setTimeout(() => {
           document.querySelectorAll(".card.card-revealed")[0].classList.remove("card-revealed")
           document.querySelectorAll(".card.card-revealed")[0].classList.remove("card-revealed")
-        }, 2000);
+        }, 1300);
       }
     }
   }

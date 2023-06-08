@@ -1,29 +1,28 @@
-<h1>jeu memory partial ci-dessous</h1>
-<div data-controller="memory">
-  <div id="cardboard" class="container">
-    <div class="row">
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card one col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card two col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card three col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card four col m-2"></div>
+<div data-controller="memory" id="game">
+  <div id="cardboard">
+    <div class="line">
+      <div id="one" data-memory-target='card' data-action="click->memory#reveal" class="card one"></div>
+      <div id="two" data-memory-target='card' data-action="click->memory#reveal" class="card two"></div>
+      <div id="three" data-memory-target='card' data-action="click->memory#reveal" class="card three"></div>
+      <div id="four" data-memory-target='card' data-action="click->memory#reveal" class="card four"></div>
     </div>
-    <div class="row">
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card one col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card two col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card three col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card four col m-2"></div>
+    <div class="line">
+      <div id="five" data-memory-target='card' data-action="click->memory#reveal" class="card one"></div>
+      <div id="six" data-memory-target='card' data-action="click->memory#reveal" class="card two"></div>
+      <div id="seven" data-memory-target='card' data-action="click->memory#reveal" class="card three"></div>
+      <div id="eight" data-memory-target='card' data-action="click->memory#reveal" class="card four"></div>
     </div>
-    <div class="row">
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card five col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card six col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card seven col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card eight col m-2"></div>
+    <div class="line">
+      <div id="nine" data-memory-target='card' data-action="click->memory#reveal" class="card five"></div>
+      <div id="ten" data-memory-target='card' data-action="click->memory#reveal" class="card six"></div>
+      <div id="eleven" data-memory-target='card' data-action="click->memory#reveal" class="card seven"></div>
+      <div id="twelve" data-memory-target='card' data-action="click->memory#reveal" class="card eight"></div>
     </div>
-    <div class="row">
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card five col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card six col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card seven col m-2"></div>
-      <div data-memory-target='card' data-action="click->memory#reveal" class="card eight col m-2"></div>
+    <div class="line">
+      <div id="thirteen" data-memory-target='card' data-action="click->memory#reveal" class="card five"></div>
+      <div id="fourteen" data-memory-target='card' data-action="click->memory#reveal" class="card six"></div>
+      <div id="fifteen" data-memory-target='card' data-action="click->memory#reveal" class="card seven"></div>
+      <div id="sixteen" data-memory-target='card' data-action="click->memory#reveal" class="card eight"></div>
     </div>
   </div>
 </div>
