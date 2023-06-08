@@ -7,6 +7,11 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 
+body {
+  background-color: $timmy-blue;
+  font-family: 'Pacifico';font-size: 22px;
+}
+
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
