@@ -1,7 +1,7 @@
 
 <p class="back"><%= link_to "retour", children_path %></p>
 
-<div class="container">
+<div class="new-child container">
       <h1>Votre enfant </h1>
       <br>
       <br>
@@ -16,7 +16,7 @@
           <%= f.input :photo, as: :file %>
           <%= f.input :alarm %>
         <div class="Valider">
-           <%= f.submit "Valider", class: "Validation btn-warning" %>
+           <%= f.submit "Valider", class: "validation btn-warning" %>
         </div>
 
       <% end %>
