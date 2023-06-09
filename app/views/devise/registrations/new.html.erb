@@ -1,29 +1,30 @@
-<div class="navbar-homepage"></div>
+<div class="navbar-homepage mt-2"><h1>Timmy !</h1></div>
   <div class="container-devise mt-5">
 
-  <h2 class="text-white">Sign up</h2>
+  <h2 class="text-white">Inscription</h2>
   <br>
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: :false }) do |f| %>
     <%= f.error_notification %>
 
     <div class="form-inputs text-white">
+      <%= f.input :first_name, label: "Prénom" %>
+      <%= f.input :last_name, label: "Nom" %>
       <%= f.input :email,
                   required: true,
                   autofocus: true,
                   input_html: { autocomplete: "email" }%>
-      <%= f.input :password,
+      <%= f.input :password, label: "Mot de passe",
                   required: true,
-                  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                  hint: ("#{@minimum_password_length} caractères minimum" if @minimum_password_length),
                   input_html: { autocomplete: "new-password" } %>
-      <%= f.input :password_confirmation,
+      <%= f.input :password_confirmation, label: "Confirmer le mot de passe",
                   required: true,
                   input_html: { autocomplete: "new-password" } %>
     </div>
 
-    <div class="form-actions">
-      <%= f.button :submit, "Sign up", class: "btn btn-primary text-white" %>
+    <div class="form-actions mb-2">
+      <%= f.button :submit, "Inscription", class: "btn-devise text-white" %>
     </div>
   <% end %>
-  <br>
   <%= render "devise/shared/links" %>
 </div>
