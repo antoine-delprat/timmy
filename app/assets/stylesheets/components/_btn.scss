@@ -7,6 +7,7 @@
   margin: 4px;
   height: fit-content;
   text-decoration: none;
+  font-family: $headers-font;
 }
 
 .btn-inscription {
@@ -18,6 +19,7 @@
   height: fit-content;
   text-decoration: none;
   justify-content: center;
+  font-family: $headers-font;
 }
 
 .btn-devise, .btn-devise:focus-visible, .btn-devise:active {
