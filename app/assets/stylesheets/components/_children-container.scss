@@ -1,20 +1,82 @@
+
+
 .children-container {
-  width: 160px;
+  width: 800px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border: solid 1px white;
   font-size: 2rem;
-  text-decoration: none;
   transition-duration: 0.1s;
 
+  a {
+    text-decoration: none;
+
+  }
+
   h2 {
+    color: white;
+  }
+
+
+
+  img {
+    border-radius: 150px;
+  }
+}
+
+.profil-container {
+  text-align: center;
+
+  a{
     color: white;
 
   }
 
-  img {
+}
 
-    border-radius: 150px;
-  }
+
+.container {
+  width: 40%;
+  color: white;
+
+ p{
+
+  color: brown;
+ }
+
+}
+
+
+.form-control {
+  width: 70%;
+  height: 35px;
+  border: 1px solid  brown;
+  border-radius: 50px;
+  background-color: $timmy-blue;
+
+}
+
+.form-select {
+  width: 40%;
+  height: 35px;
+  border: 1px solid #4A4A4A;
+  border-radius: 50px;
+  background-color: $timmy-blue;
+
+}
+
+
+.Validation {
+  width: 35%;
+  height: 40px;
+  border: 1px solid #4A4A4A;
+  border-radius: 50px;
+  background-color: $timmy-orange;
+}
+
+.back {
+  margin-bottom: 0px;
+  text-decoration: none;
+  margin-left: 15px;
 }
