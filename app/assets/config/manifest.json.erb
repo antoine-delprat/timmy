@@ -1,0 +1,17 @@
+{
+  "background_color": "white",
+  "description": "Timmy is a safe and highly-interactive app for kids, with learning games for kids from 4 to 6 years old.",
+  "display": "fullscreen",
+  "name": "Timmy !",
+  "icons": [
+    <% files = Dir.entries(Rails.root.join("app/assets/images/icons/")).select {|f| !File.directory? f} %>
+    <% files.each_with_index do |file, index| %>
+      <% match = file.match(/.+-(?<size>\d{2,3}x\d{2,3}).png/) %>
+      {
+        "src": "<%= image_path "icons/#{file}" %>",
+        "sizes": "<%= match && match[:size] %>",
+        "type": "image/png"
+      }<%= "," unless (files.size - 1) == index %>
+    <% end %>
+  ]
+}
