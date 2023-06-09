@@ -4,6 +4,7 @@
   row-gap: 31px;
   column-gap: 31px;
   padding: 31px;
+  padding-top: 23px;
   height: 90vh;
   width: 100vw;
 }
@@ -100,8 +101,18 @@
     }
 }
 
-.play-btn {
+.play-btn-orange {
   color: $timmy-orange;
+  padding: 0px 12px;
+  padding-left: 14px;
+  padding-top: 0px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid white;
+}
+
+.play-btn-green {
+  color: $timmy-green;
   padding: 0px 12px;
   padding-left: 14px;
   padding-top: 0px;
@@ -117,14 +128,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0px;
-  margin-top: 8px;
-  padding: 0px 22px;
+  margin-top: 10px;
+  padding: 0px 13px;
   font-family: $headers-font;
   font-size: 2.7rem;
   color: white;
     p {
-      margin-bottom: 0px;
-      margin-top: 20px;
+      margin-bottom: 5px;
+      margin-top: 0px;
     }
 
     i {

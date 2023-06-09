@@ -2,13 +2,13 @@
   <%= link_to children_path() do %>
     <i class="fa-solid fa-arrow-left fa-xl back-arrow"></i>
   <% end %>
-  <p><%= "A quel jeu veux-tu jouer ?" %></p>
+  <p><%= "À quel jeu veux-tu jouer #{@child.first_name}?" %></p>
   <i class="fa-solid fa-arrow-left fa-xl"></i>
 </div>
 
 <div class="grid-game">
-  <% @games.each do |game| %>
-    <% if game.id.odd?%>
+  <% @games.each_with_index do |game, index| %>
+    <% if index.even?%>
       <% color_card = "orange-card-game" %>
     <% else %>
       <% color_card = "green-card-game" %>
@@ -35,7 +35,11 @@
       </div>
       <div class="bottom-card">
         <p><%= game.name %></p>
-        <p class="play-btn">jouer</p>
+        <% if index.even?%>
+          <p class="play-btn-orange">jouer</p>
+        <% else %>
+          <p class="play-btn-green">jouer</p>
+        <% end %>
       </div>
     <% end %>
   <% end %>
