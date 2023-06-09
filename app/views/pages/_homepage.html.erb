@@ -1,0 +1,24 @@
+<div id="home">
+    <div class="navbar-homepage-wrapper">
+      <div class="navbar-homepage container">
+        <div><h1>Timmy !</h1></div>
+        <div> <%= link_to "Connexion", new_user_session_path, class: "btn-connexion" %></div>
+      </div>
+    </div>
+
+    <div class="container-homepage container">
+      <div><h2 class="fw-bold text-center p-2">Des jeux pour apprendre et progresser en s'amusant</h2></div>
+      <div class="cover-homepage"> <%= image_tag "game.jpeg" %></div>
+        <div class="text-center p-2">
+          <p>Timmy est une application web sécurisée, créée afin que vos enfants de 4 à 6 ans
+            puissent s'amuser en développant leurs capacités cognitives.
+          </p>
+          <p>Nos jeux ont été développés avec des experts de l'éducation et de l'apprentissage afin de mettre l'accent sur
+          l'interactivité, élément primordial dans le développement de l'enfant.
+          </p>
+        </div>
+        <div class="text-center"><%= link_to "Rejoignez l'aventure", new_user_registration_path, class: "btn-inscription" %></div>
+    </div>
+
+    <div class="footer-home mt-4"></div>
+</div>

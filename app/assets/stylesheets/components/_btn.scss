@@ -3,10 +3,11 @@
   border-radius: 50px;
   background-color: $timmy-orange;
   color: white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   margin: 4px;
   height: fit-content;
   text-decoration: none;
+  font-family: $headers-font;
 }
 
 .btn-inscription {
@@ -14,8 +15,24 @@
   border-radius: 50px;
   background-color: $timmy-green;
   color: white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   height: fit-content;
   text-decoration: none;
   justify-content: center;
+  font-family: $headers-font;
+}
+
+.btn-devise, .btn-devise:focus-visible, .btn-devise:active {
+  border-radius: $border-radius-circle;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 8px 40px;
+  font-family: $headers-font;
+  font-size: 1.2rem;
+  background-color: $timmy-orange !important;
+  border: none !important;
+}
+
+.btn-devise:hover {
+  background-color: $timmy-orange;
+  color: white;
 }
