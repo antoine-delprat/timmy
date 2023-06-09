@@ -36,7 +36,7 @@
 }
 
 
-.container {
+.new-child.container {
   width: 40%;
   color: white;
 
@@ -48,7 +48,7 @@
 }
 
 
-.form-control {
+.new-child .form-control {
   width: 70%;
   height: 35px;
   border: 1px solid  brown;
@@ -57,7 +57,7 @@
 
 }
 
-.form-select {
+.new-child .form-select {
   width: 40%;
   height: 35px;
   border: 1px solid #4A4A4A;
@@ -67,7 +67,7 @@
 }
 
 
-.Validation {
+.validation {
   width: 35%;
   height: 40px;
   border: 1px solid #4A4A4A;
