@@ -1,3 +1,10 @@
-<h1><%= @child_game.game.name %></h1>
-<%= render  'games/game1' %>
-<%= link_to "Retour à la liste des jeux", child_games_path(@child_game.child) %>
+<div class="gameplay-nav d-flex justify-content-between">
+  <%= link_to child_games_path(@child_game.child) do %>
+    <i class="fa-solid fa-arrow-left fa-xl back-arrow"></i>
+  <% end %>
+  <h1 class="gameplay-title"><%= @child_game.game.name %></h1>
+  <a href="#">
+    <i class="fa-solid fa-volume-low fa-xl back-arrow"></i>
+  </a>
+</div>
+<%= render  'games/game1', child: @child_game.child, game: @child_game.game %>

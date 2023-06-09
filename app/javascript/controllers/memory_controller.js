@@ -2,6 +2,11 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   static targets = ["card"]
+  static values = {
+    child: String,
+    game: String
+  }
+
 
   reveal(event) {
     // au clic sur une image, on ajoute la class 'card-revealed'
@@ -22,7 +27,7 @@ export default class extends Controller {
         document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
 
         if (document.querySelectorAll(".card.card-won").length == 16) {
-          document.getElementById("modal-bloc").innerHTML = "<div id=\"modal-win\"><h1>Bravo !</h1><div class=\"d-flex justify-content-center mt-5 mb-5\"><div><div class=\"card one card-won\"></div></div><div class=\"d-grid\"><div class=\"d-flex\"><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div><div><i class=\"fa-solid fa-star\"></i></div><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div></div><h3 class=\"align-self-end\">XX points</h3></div></div><div class=\"d-flex justify-content-center mt-5 mb-5\"><%= link_to child_games_path(@child_game.child) do %><i class=\"fa-solid fa-house\"></i><% end %><%= link_to child_games_path(@child_game.child) do %><i class=\"fa-solid fa-rotate-right\"></i><% end %></div></div>"
+          document.getElementById("modal-bloc").innerHTML = "<div id=\"modal-win\"><h1>Bravo !</h1><div class=\"d-flex justify-content-center mt-5 mb-5\"><div><div class=\"card one card-won\"></div></div><div class=\"d-grid\"><div class=\"d-flex\"><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div><div><i class=\"fa-solid fa-star\"></i></div><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div></div><h3 class=\"align-self-end\">XX points</h3></div></div><div class=\"d-flex justify-content-center mt-5 mb-5\"><a href=\"/children/" + this.childValue + "/games\"><i class=\"fa-solid fa-house\"></i></a><a data-turbo-method=\"post\" href=\"/children/" + this.childValue + "/games/" + this.gameValue + "/child_games\"><i class=\"fa-solid fa-rotate-right\"></i></a></div></div>"
           document.getElementById("cardboard").style.zIndex = "-3"
         }
       }, 1000);
