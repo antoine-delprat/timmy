@@ -1,10 +1,10 @@
 <div class="navbar-homepage"></div>
 <div class="container-devise mt-5">
-  <h2>Log in</h2>
+  <h2 class="text-white">Log in</h2>
   <br>
   <br>
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
-    <div class="form-inputs">
+    <div class="form-inputs text-white">
       <%= f.input :email,
                   required: false,
                   autofocus: true,
@@ -16,8 +16,9 @@
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Log in" %>
+      <%= f.button :submit, "Log in", class: "btn btn-primary text-white" %>
     </div>
   <% end %>
+  <br>
   <%= render "devise/shared/links" %>
 </div>
