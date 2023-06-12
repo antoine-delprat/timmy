@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import MemoryController from "./memory_controller"
 application.register("memory", MemoryController)
+
+import TooltipController from "./tooltip_controller"
+application.register("tooltip", TooltipController)

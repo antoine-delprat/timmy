@@ -1,21 +1,29 @@
 
-<p class="back"><%= link_to "retour", children_path %></p>
 
+<div class="back">
+  <%= link_to children_path() do %>
+    <i class="fa-solid fa-arrow-left fa-lg arrow-color"></i>
+  <% end %>
+  <p class="arrow-color">retour</p>
+</div>
 
 <div class="new-title"><h1>Votre enfant </h1></div>
 <div class="new-child container">
   <%= simple_form_for @child do |f| %>
     <div class="name">
-      <%= f.input :first_name, label: "Prenom", placeholder: "Charlotte" %>
+      <%= f.input :first_name, label: "Prénom", placeholder: "Charlotte" %>
     </div>
     <div class="birth_date">
-    <p>Date de naissance</p>
-      <%= f.input :birth_date, as: :date, label: false, html5: true %>
+      <%= f.input :birth_date, as: :date, label: "Date de naissance", html5: true %>
     </div>
       <%= f.input :photo, as: :file %>
-      <%= f.input :alarm %>
+      <div class="alarm">
+        <%= f.input :alarm, label: "Alerte 30 min d'écran" %>
+        <i class="fa-solid fa-circle-info" data-controller="tooltip"
+        data-bs-toggle="tooltip" data-bs-placement="top" title="Cocher la case si vous voulez avoir une alerte sonore au bout de 30 min"></i>
+      </div>
     <div class="Valider">
-        <%= f.submit "Valider", class: "validation btn-warning" %>
+        <%= f.submit "Valider", class: "validation" %>
     </div>
   <% end %>
 </div>
