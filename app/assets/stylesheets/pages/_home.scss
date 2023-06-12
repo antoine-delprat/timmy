@@ -1,14 +1,27 @@
 // Specific CSS for your home-page
-.container-homepage .cover-homepage img {
+.container-homepage .cover-homepage {
   width: 100%;
+  min-height: calc(100vh - 50px);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 20px;
 }
 
-#home-h2 {
-  margin: 20px auto;
+.container-homepage-content {
+  padding-top: 13rem ;
+  color: white;
 }
 
-#text-home {
-  margin: 20px auto;
+.home-h2 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: $headers-font;
+  min-height: 50px;
+  }
+
+#home-p {
+  padding-block: 2rem;
+  text-align: justify;
 }
 
 .timmy-link {
