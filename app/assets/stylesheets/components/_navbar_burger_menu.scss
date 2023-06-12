@@ -1,10 +1,14 @@
 .navbar {
   background-color: transparent;
+  .dropdown {
+    margin-left: 6px;
+    margin-top: 7px;
+  }
 }
 
 .btn-circle {
-  width: 50px !important;
-  height: 50px !important;
+  width: 67px !important;
+  height: 67px !important;
   border-radius: 50%;
 }
 
