@@ -4,26 +4,24 @@
   min-height: calc(100vh - 50px);
   background-size: cover;
   background-position: center;
-  display: flex;
   padding: 20px 20px;
 }
 
 .container-homepage-content {
-  padding-top: 10rem ;
+  padding-top: 13rem ;
   color: white;
 }
 
-#home-h2 {
+.home-h2 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 1rem;
+  font-family: $headers-font;
   }
-
 
 #home-p {
   padding-block: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .timmy-link {

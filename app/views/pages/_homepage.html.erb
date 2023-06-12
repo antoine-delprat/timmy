@@ -9,7 +9,18 @@
     <div class="container-homepage">
       <div class="cover-homepage" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'game.jpg'%>)">
         <div class="container-homepage-content container">
-            <h2 id="home-h2">Des jeux pour apprendre et progresser en s'amusant</h2>
+        <span id="animated-h2" class="home-h2">
+            <h2 class="home-h2"></h2>
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+              <script>
+                var typed = new Typed('#animated-h2', {
+                  strings: ["Des jeux pour apprendre et progresser en s'amusant"],
+                  typeSpeed: 50,
+                  showCursor: false,
+                  loop: true,
+                });
+              </script>
+        </span>
             <p id="home-p">Timmy est une application web sécurisée, créée afin que vos enfants de 4 à 6 ans
               puissent s'amuser en développant leurs capacités cognitives.
               Nos jeux ont été développés avec des experts de l'éducation et de l'apprentissage afin de mettre l'accent sur
@@ -18,4 +29,5 @@
             <%= link_to "Rejoignez l'aventure", new_user_registration_path, class: "btn-inscription text-center" %>
         </div>
       </div>
+
     </div>
