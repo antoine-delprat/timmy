@@ -1,10 +1,12 @@
-<div class="gameplay-nav d-flex justify-content-between">
+<div data-controller="menu" class="gameplay-nav d-flex justify-content-between">
   <%= link_to child_games_path(@child_game.child) do %>
     <i class="fa-solid fa-arrow-left fa-xl back-arrow"></i>
   <% end %>
   <h1 class="gameplay-title"><%= @child_game.game.name %></h1>
-  <a href="#">
-    <i class="fa-solid fa-volume-low fa-xl back-arrow"></i>
-  </a>
+  <div>
+      <i data-menu-target='question' data-action="click->menu#question" class="fa-solid fa-question fa-xl back-arrow"></i>
+      <i data-menu-target='sound' data-action="click->menu#sound" class="fa-solid fa-volume-low fa-xl back-arrow"></i>
+  </div>
 </div>
-<%= render  'games/game1', child: @child_game.child, game: @child_game.game %>
+<%= audio_tag "question.mp3", id: "sound-question" %>
+<%= render 'games/game1', child: @child_game.child, game: @child_game.game %>

@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import MemoryController from "./memory_controller"
 application.register("memory", MemoryController)
+
+import MenuController from "./menu_controller"
+application.register("menu", MenuController)
