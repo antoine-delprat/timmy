@@ -9,6 +9,21 @@
     display: flex;
   }
 
+  animation: bounce-in-right 1.7s ease;
+
+  @keyframes bounce-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+
   #one {
     margin-right: 46px;
     margin-left: 31px;
@@ -152,6 +167,21 @@
   }
   .card.eight.card-won {
     background-image: linear-gradient(rgba(49, 49, 49, 0.643), rgba(73, 73, 73, 0.682)), url("games/memory/zebre.jpeg");
+  }
+
+  .shake {
+    animation: shake-animation 4.72s ease;
+    transform-origin: 50% 50%;
+  }
+  @keyframes shake-animation {
+     0% { transform:translate(0,0) }
+    1.78571% { transform:translate(5px,0) }
+    3.57143% { transform:translate(0,0) }
+    5.35714% { transform:translate(5px,0) }
+    7.14286% { transform:translate(0,0) }
+    8.92857% { transform:translate(5px,0) }
+    10.71429% { transform:translate(0,0) }
+    100% { transform:translate(0,0) }
   }
 }
 
