@@ -62,6 +62,42 @@
   text-decoration: none;
 }
 
+.dark-green-card-game {
+  padding: 14px;
+  padding-bottom: 0px;
+  background-color: $timmy-dark-green;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+.yellow-card-game {
+  padding: 14px;
+  padding-bottom: 0px;
+  background-color: $timmy-yellow;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+.brown-card-game {
+  padding: 14px;
+  padding-bottom: 0px;
+  background-color: $timmy-brown;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+.red-card-game {
+  padding: 14px;
+  padding-bottom: 0px;
+  background-color: $timmy-red;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
 .photo-game {
   background-size: cover;
   background-position: center;
@@ -121,6 +157,46 @@
   border: 1px solid white;
 }
 
+.play-btn-dark-green {
+  color: $timmy-dark-green;
+  padding: 0px 12px;
+  padding-left: 14px;
+  padding-top: 0px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid white;
+}
+
+.play-btn-yellow {
+  color: $timmy-yellow;
+  padding: 0px 12px;
+  padding-left: 14px;
+  padding-top: 0px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid white;
+}
+
+.play-btn-brown {
+  color: $timmy-brown;
+  padding: 0px 12px;
+  padding-left: 14px;
+  padding-top: 0px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid white;
+}
+
+.play-btn-red {
+  color: $timmy-red;
+  padding: 0px 12px;
+  padding-left: 14px;
+  padding-top: 0px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid white;
+}
+
 .head-game {
   display: flex;
   height: 10vh;
@@ -147,10 +223,34 @@
 
     .back-arrow {
       color: white;
-      font-size: normal;
+      font-size: 57px;
       background: $timmy-orange;
-      padding: 35px 10px;
+      padding: 31px 8px;
       border-radius: 50%;
       text-decoration: none;
     }
+}
+
+.icone-orange {
+  color: $timmy-orange;
+}
+
+.icone-green {
+  color: $timmy-green;
+}
+
+.icone-dark-green {
+  color: $timmy-dark-green;
+}
+
+.icone-brown {
+  color: $timmy-brown;
+}
+
+.icone-red {
+  color: $timmy-red;
+}
+
+.icone-yellow {
+  color: $timmy-yellow;
 }

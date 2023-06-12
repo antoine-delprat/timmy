@@ -15,10 +15,6 @@ body:has(#game) {
   background-color: $timmy-green;
 }
 
-body:has(#home) {
-  background-color: white;
-}
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
