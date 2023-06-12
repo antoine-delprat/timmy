@@ -2,20 +2,21 @@
     <div class="who">
         <h1>Qui va jouer aujourd'hui?</h1>
     </div>
-        <br>
     <div class="profil-container">
       <div class="children-container">
             <% @children.each do |child| %>
               <div class="children-cards">
                   <%= link_to child_games_path(child) do %>
-                    <%= cl_image_tag child.avatar.key, height: 300, width: 300, crop: :fill %>
+                    <%= cl_image_tag child.avatar.key, height: 220, width: 220, crop: :fill %>
                     <h2><%= child.first_name %></h2>
                   <% end %>
               </div>
             <% end %>
       </div>
     <div>
-    <div >
-        <%= link_to "Ajouter un enfant", new_child_path %>
+    <div id="plus-button" >
+        <%= link_to new_child_path, class: "plus-button" do %>
+        <i class="fa-solid fa-xl back-arrow fa-plus"></i>
+        <% end %>
     </div>
 </div>
