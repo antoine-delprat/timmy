@@ -9,5 +9,8 @@ class ChildGamesController < ApplicationController
 
   def show
     @child_game = ChildGame.find(params[:id])
+    @child_game.score = 10
+    @child_game.start_date = DateTime.now
+    # raise Update?
   end
 end
