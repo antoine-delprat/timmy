@@ -72,7 +72,7 @@ puts "Creating games..."
 
 game_one = Game.create!(
   name: "Mémoire d'éléphant",
-  description: "Jeu de mémoire avec des cartes. Retrouve les pairs d'animaux!",
+  description: "Jeu de mémoire avec des cartes. Retrouve les paires d'animaux!",
   category: 'Mémoire'
 )
 file = File.open(Rails.root.join("db/seeds/games/elephant.jpeg"))
