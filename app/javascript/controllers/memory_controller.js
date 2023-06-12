@@ -31,6 +31,16 @@ export default class extends Controller {
     audioreveal.play();
     }
     if (document.querySelectorAll(".card.card-revealed").length % 2 == 0) {
+
+      var noclick = function(e) {
+        e.classList.add('no-click');
+      }
+      var okclick = function(e) {
+        e.classList.remove('no-click');
+      }
+
+      document.querySelectorAll(".card").forEach(element => noclick(element));
+
       if (document.querySelectorAll(".card.card-revealed")[0].classList.value === document.querySelectorAll(".card.card-revealed")[1].classList.value) {
         var audiowon = document.getElementById("sound-won");
         audiowon.play();
@@ -50,13 +60,15 @@ export default class extends Controller {
         document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
 
         if (document.querySelectorAll(".card.card-won").length == 16) {
+          document.getElementById("cardboard").classList.add("shake");
           var audiovictory = document.getElementById("sound-victory");
           audiovictory.play();
 
           document.getElementById("modal-bloc").innerHTML = "<div id=\"modal-win\"><h1>Bravo !</h1><div class=\"d-flex justify-content-center mt-5 mb-5\"><div><div class=\"card two card-won\"></div></div><div class=\"d-grid\"><div class=\"d-flex\"><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div><div><i class=\"fa-solid fa-star\"></i></div><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div></div><h3 class=\"align-self-end\">+ 10 points</h3></div></div><div class=\"d-flex justify-content-center mt-5 mb-5\"><a href=\"/children/" + this.childValue + "/games\"><i class=\"fa-solid fa-house\"></i></a><a data-turbo-method=\"post\" href=\"/children/" + this.childValue + "/games/" + this.gameValue + "/child_games\"><i class=\"fa-solid fa-rotate-right\"></i></a></div></div>"
           document.getElementById("cardboard").style.zIndex = "-3"
         }
-      }, 1000);
+        document.querySelectorAll(".card").forEach(element => okclick(element));
+        }, 1000);
 
       }
       else {
@@ -67,8 +79,11 @@ export default class extends Controller {
         setTimeout(() => {
           document.querySelectorAll(".card.card-revealed")[0].classList.remove("card-revealed", "shake")
           document.querySelectorAll(".card.card-revealed")[0].classList.remove("card-revealed", "shake")
+          document.querySelectorAll(".card").forEach(element => okclick(element));
         }, 1300);
       }
+
+
     }
   }
 }
