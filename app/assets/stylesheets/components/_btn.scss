@@ -5,20 +5,31 @@
   color: white;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   margin: 4px;
-  height: fit-content;
   text-decoration: none;
   font-family: $headers-font;
+}
+
+.btn-connexion:hover {
+  box-shadow: 0px 2px 8px $timmy-orange;
 }
 
 .btn-inscription {
   padding: 8px 45px;
   border-radius: 50px;
   background-color: $timmy-green;
-  color: white;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-  height: fit-content;
+  color: white;
   text-decoration: none;
   font-family: $headers-font;
+  font-size: 25px;
+}
+
+.btn-inscription:hover {
+  box-shadow: 0px 2px 8px $timmy-orange;
+  background: $timmy-orange;
+  color: white;
+  transform: translateY(-5px);
+  transition: 0.4s;
 }
 
 .btn-devise, .btn-devise:focus-visible, .btn-devise:active {
@@ -32,6 +43,5 @@
 }
 
 .btn-devise:hover {
-  background-color: $timmy-orange;
-  color: white;
+  box-shadow: 0px 2px 8px $timmy-orange;
 }
