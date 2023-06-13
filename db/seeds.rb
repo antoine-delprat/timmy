@@ -120,7 +120,7 @@ game_six.photo.attach(io: file, filename: "rebus.jpeg", content_type: "image/jpe
 
 game_seven = Game.create!(
   name: 'Couleurs partout',
-  description: 'Laisse parler ta créativité et colore plein de dessins!',
+  description: 'Laisse parler ta créativité et colorie plein de dessins!',
   category: 'Éveil'
 )
 file = File.open(Rails.root.join("db/seeds/games/coloriage.jpeg"))
