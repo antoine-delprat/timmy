@@ -12,6 +12,3 @@ application.register("memory", MemoryController)
 
 import MenuController from "./menu_controller"
 application.register("menu", MenuController)
-
-import TooltipController from "./tooltip_controller"
-application.register("tooltip", TooltipController)
