@@ -1,0 +1,5 @@
+meta_name: "Timmy !"
+meta_title: "Timmy ! - Apprendre en s'amusant"
+meta_description: "Timmy est une application web sécurisée, créée afin que vos enfants de 4 à 6 ans puissent s'amuser en développant leurs capacités cognitives. Nos jeux ont été développés avec des experts de l'éducation et de l'apprentissage afin de mettre l'accent sur l'interactivité, élément primordial dans le développement de l'enfant."
+meta_image: "gamesocials.jpg" # should exist in `app/assets/images/`
+# twitter_account: "@your_twitter_account"   # required for Twitter Cards
