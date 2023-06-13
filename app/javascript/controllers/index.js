@@ -12,5 +12,3 @@ application.register("memory", MemoryController)
 
 import MenuController from "./menu_controller"
 application.register("menu", MenuController)
-
-

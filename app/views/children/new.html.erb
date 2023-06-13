@@ -19,8 +19,9 @@
       <%= f.input :photo, as: :file %>
       <div class="alarm">
         <%= f.input :alarm, label: "Alerte 30 min d'écran" %>
-        <i class="fa-solid fa-circle-info" type="button" data-toggle="tooltip" data-placement="top" title="Cochez la case si vous voulez"></i>
+        <i class="fa-solid fa-circle-info" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
       </div>
+</button>
     <div class="Valider">
         <%= f.submit "Valider", class: "validation" %>
     </div>
