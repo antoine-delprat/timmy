@@ -169,7 +169,7 @@ score_d = ChildGame.create!(
   child: hugo,
   game: game_one,
   score: 30,
-  start_date: DateTime.new(2023, 6, 6, 10, 58, 0),
+  start_date: DateTime.new(2023, 6, 6, 9, 58, 0),
   end_date: DateTime.new(2023, 6, 6, 10, 17, 0)
 )
 score_e = ChildGame.create!(
