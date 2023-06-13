@@ -6,6 +6,7 @@
   color: white;
   text-align: center;
   margin-top: 15px;
+  margin-left: 55px;
 }
 
 .back-arrow {
@@ -15,4 +16,20 @@
   border-radius: 50%;
   text-decoration: none;
   padding: 35px 10px;
+  box-shadow: 1px 1px 8px -1px #0000001f;
+}
+
+.fa-question.back-arrow {
+  padding: 35px 18px;
+  margin-right: 5px;
+}
+
+.back-arrow-disabled {
+  color: #a7a7a7;
+  background: #eaeaea;
+  font-size: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  padding: 35px 10px;
+  box-shadow: 1px 1px 8px -1px #0000001f;
 }

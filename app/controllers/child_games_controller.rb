@@ -9,5 +9,13 @@ class ChildGamesController < ApplicationController
 
   def show
     @child_game = ChildGame.find(params[:id])
+    # @child_game.score = 10
+    # @child_game.start_date = DateTime.now
+    # @child_game.save!
+  end
+
+  def update
+    # raise
+    # passer des params ? dans l'url côté js et faire un if dessus pour rediriger vers le bon path (dans une méthode update)
   end
 end

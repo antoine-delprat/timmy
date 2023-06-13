@@ -72,7 +72,7 @@ puts "Creating games..."
 
 game_one = Game.create!(
   name: "Mémoire d'éléphant",
-  description: "Jeu de mémoire avec des cartes. Retrouve les pairs d'animaux!",
+  description: "Jeu de mémoire avec des cartes. Retrouve les paires d'animaux!",
   category: 'Mémoire'
 )
 file = File.open(Rails.root.join("db/seeds/games/elephant.jpeg"))
@@ -120,7 +120,7 @@ game_six.photo.attach(io: file, filename: "rebus.jpeg", content_type: "image/jpe
 
 game_seven = Game.create!(
   name: 'Couleurs partout',
-  description: 'Laisse parler ta créativité et colore plein de dessins!',
+  description: 'Laisse parler ta créativité et colorie plein de dessins!',
   category: 'Éveil'
 )
 file = File.open(Rails.root.join("db/seeds/games/coloriage.jpeg"))
@@ -227,6 +227,13 @@ score_l = ChildGame.create!(
   score: 50,
   start_date: DateTime.new(2023, 6, 2, 15, 58, 0),
   end_date: DateTime.new(2023, 6, 2, 16, 17, 0)
+)
+score_m = ChildGame.create!(
+  child: maggie,
+  game: game_one,
+  score: 30,
+  start_date: DateTime.new(2023, 5, 20, 16, 30, 0),
+  end_date: DateTime.new(2023, 5, 20, 16, 54, 0)
 )
 
 puts "Seeds finished!"
