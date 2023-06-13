@@ -1,5 +1,5 @@
 .btn-connexion {
-  padding: 4px 20px;
+  padding: 1px 20px 5px;
   border-radius: 50px;
   background-color: $timmy-orange;
   color: white;
@@ -7,6 +7,7 @@
   margin: 4px;
   text-decoration: none;
   font-family: $headers-font;
+  font-size: 19px;
 }
 
 .btn-connexion:hover {
@@ -14,7 +15,7 @@
 }
 
 .btn-inscription {
-  padding: 14px 45px 20px;
+  padding: 8px 22px 18px;
   border-radius: 50px;
   background-color: #8CD96F;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);

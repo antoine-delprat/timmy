@@ -1,5 +1,3 @@
-
-
 <div class="back">
   <%= link_to children_path() do %>
     <i class="fa-solid fa-arrow-left fa-lg arrow-color"></i>
@@ -18,10 +16,8 @@
     </div>
       <%= f.input :photo, as: :file %>
       <div class="alarm">
-        <%= f.input :alarm, label: "Alerte 30 min d'écran" %>
-        <i class="fa-solid fa-circle-info" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"></i>
+        <%= f.input :alarm, label: "Alerte sonore au bout de 30 min ?" %>
       </div>
-</button>
     <div class="Valider">
         <%= f.submit "Valider", class: "validation" %>
     </div>
