@@ -280,6 +280,7 @@ DEPENDENCIES
   bootsnap
   capybara
   cloudinary
+  date
   debug
   devise
   dotenv-rails

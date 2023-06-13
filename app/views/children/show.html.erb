@@ -3,9 +3,13 @@
 <br>
   <%= cl_image_tag @child.avatar.key, height: 220, width: 220, crop: :fill %>
 
-    <h1>Votre enfant <%= @child.first_name %></h1>
-      <h1>Ages <%= @child.birth_date %> ans</h1>
+    <h1><%= @child.first_name %></h1>
+      <% @date_dujour = Date.today  %>
+      <% @date_enfant = @child.birth_date  %>
+      <h1>Age <%= (@date_dujour - @date_enfant).to_i / 365  %> ans</h1>
       <h1>temps d'ecran <%= @screen_time %></h1>
+      <h1>temps d'ecran des 7 derniers jours<%= @screen_week %></h1>
+
       <br>
       <% @child_game.each do |game| %>
          <%= game.game.name %>
@@ -13,6 +17,7 @@
 
       <% end %>
 
-<%= @total_score %>
+
 
 <br><%= link_to "retour", children_path %>
+<br>

@@ -20,47 +20,33 @@ class ChildrenController < ApplicationController
     @games = @child.games.all
     @total_score = 0
     @screen_time = 0
+   # @week_time = ChildGame.where("end_date >= ? AND start_date <= ?", 7.days.ago, Time.now)
+    @week_time = ChildGame.where("end_date >= ? AND start_date <= ? AND child_id = ?", 7.days.ago, Time.now, @child.id)
+    @screen_week = 0
+    @screen_week_per_child = 0
+
+
 
     @child_game.each do |child_game|
-      if child_game.game.name == "Mémoire d'éléphant"
         @total_score += child_game.score
-        @screen_time += (child_game.end_date - child_game.start_date) / 1.minutes
+        @screen_time += ((child_game.end_date - child_game.start_date) /60).to_i
       end
 
-    end
 
 
-
-
-
-
-
-
-
-
-
-    # @game_id = params[:game_id]
-
-    # Rechercher le jeu spécifié
-    # @game = Game.find(@game_id)
-
-    # Rechercher les enregistrements ChildGame pour l'enfant et le jeu spécifiés
-    # @child_game = ChildGame.find_by(child_id: @child.id, game_id: @game.id)
-
-
-
-
-    # @child_game = ChildGame.new(child: @child, game: @game)
-    # @child_game = ChildGame.find(params[:id])
-    # @score = @child_game.map
-
+        @week_time.each do |week_time|
+         @screen_week += ((week_time.end_date - week_time.start_date) /60).to_i
+        end
 
 
   end
+
+
 
   private
 
   def child_params
     params.require(:child).permit(:first_name, :age)
   end
+
 end
