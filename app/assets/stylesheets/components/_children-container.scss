@@ -1,5 +1,7 @@
 .who {
-  margin-bottom: 115px;
+  margin-bottom: 101px;
+  font-size: 40px;
+  font-family: "Pacifico", "Helvetica", "sans-serif";
 }
 
 .children-container {
@@ -57,7 +59,6 @@
   height: 35px;
   border-radius: 8px;
   background-color: white;
-  // color: #bdbcbc;
 }
 
 
@@ -90,16 +91,3 @@
   bottom: 35px;
   right: 35px;
 }
-
-// .name {
-//   input::placeholder {
-//     color: #bdbcbc;
-//   }
-// }
-
-// .alarm {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: baseline;
-//   width: 200px;
-// }
