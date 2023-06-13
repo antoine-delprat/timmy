@@ -7,3 +7,4 @@
 //= link fail.mp3
 //= link reveal.mp3
 //= link question.mp3
+//= link birds.mp3

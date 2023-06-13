@@ -1,6 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="menu"
 export default class extends Controller {
   static targets = ["question", "sound"]
 
@@ -21,6 +20,7 @@ export default class extends Controller {
       document.getElementById("sound-reveal").muted = true
       document.getElementById("sound-fail").muted = true
       document.getElementById("sound-victory").muted = true
+      document.getElementById("sound-birds").muted = true
     }
     else {
       this.soundTarget.classList.replace("back-arrow-disabled", "back-arrow")
@@ -29,6 +29,7 @@ export default class extends Controller {
       document.getElementById("sound-reveal").muted = false
       document.getElementById("sound-fail").muted = false
       document.getElementById("sound-victory").muted = false
+      document.getElementById("sound-birds").muted = false
     }
   }
 }
