@@ -77,13 +77,14 @@
 .back {
   display: flex;
   justify-content: space-between;
-  width: 67px;
-  margin-bottom: 0px;
   text-decoration: none;
+  align-items: center;
   margin-left: 19px;
-    .arrow-color {
-      color: white;
-    }
+  width: 67px;
+  color: white;
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 #plus-button {
