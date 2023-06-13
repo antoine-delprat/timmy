@@ -1,7 +1,9 @@
 <div data-controller="menu" class="gameplay-nav d-flex justify-content-between">
-  <%= link_to child_games_path(@child_game.child) do %>
+
+  <%= link_to child_game_child_game_path(@child_game.child.id, @child_game.game.id, @child_game.id, link: "back"), data: {turbo_method: :patch} do %>
     <i class="fa-solid fa-arrow-left fa-xl back-arrow"></i>
   <% end %>
+
   <h1 class="gameplay-title"><%= @child_game.game.name %></h1>
   <div>
       <i data-menu-target='question' data-action="click->menu#question" class="fa-solid fa-question fa-xl back-arrow"></i>
@@ -9,4 +11,4 @@
   </div>
 </div>
 <%= audio_tag "question.mp3", id: "sound-question" %>
-<%= render 'games/game1', child: @child_game.child, game: @child_game.game %>
+<%= render 'games/game1', child: @child_game.child, game: @child_game.game, childgame: @child_game %>
