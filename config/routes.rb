@@ -8,8 +8,8 @@ Rails.application.routes.draw do
 
   resources :children, only: %i[new create index show] do
     resources :games, only: %i[index] do
-      resources :child_games, only: [:create]
+      resources :child_games, only: %i[create update]
     end
   end
-  resources :child_games, only: [:show]
+  resources :child_games, only: %i[show]
 end
