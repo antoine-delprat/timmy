@@ -1,6 +1,10 @@
 .navbar-homepage-wrapper {
-  background: $timmy-blue;
+  background-color: $timmy-blue;
   padding: 2px 2px;
+}
+
+.navbar-homepage-wrapper-devise {
+  background-color: transparent;
 }
 
 .navbar-homepage {
