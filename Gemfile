@@ -24,6 +24,7 @@ gem "simple_form", github: "heartcombo/simple_form"
 # my own gems
 
 gem "cloudinary"
+gem "date"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
