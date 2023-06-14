@@ -27,9 +27,11 @@
   align-items: center;
 }
 
-.stats-title, p {
-  font-family: $headers-font;
-  font-size: 25px;
+.stats-title {
+  p {
+    font-family: $headers-font;
+    font-size: 25px;
+  }
 }
 
 .container-profile {
@@ -41,8 +43,15 @@
   }
 }
 
-.h1-score {
-  text-align: center;
-  color: white;
-  margin-top: 25px;
+.profile-game-card {
+  padding: 12px;
+  background-color: $timmy-green;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-game-card-infos {
+  padding: 10px;
+  text-align: start;
 }

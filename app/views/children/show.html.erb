@@ -13,28 +13,24 @@
     </div>
       <div class="container-stats container d-flex">
         <div class="stats-title">
-          <p><i class="fa-solid fa-user-clock"></i> <%=@screen_time %> minutes </p>
+          <p><i class="fa-solid fa-user-clock"></i> <%=@screen_time %> minutes / total </p>
         </div>
         <div>
-          <p><i class="fa-solid fa-clock-rotate-left"></i> <%= @screen_week %> minutes </p>
+          <p><i class="fa-solid fa-clock-rotate-left"></i> <%= @screen_week %> minutes / 7 jours </p>
         </div>
 
       </div>
 
   </div>
 
-  <div class="h1-score">
-    <h1>Score par jeu</h1>
-  </div>
-
   <div class="container container-child-results d-flex">
     <% if @score_game1 > 0 %>
-      <div class="green-card-game">
-          <%= @name_game1 %>
+      <div class="profile-game-card">
       <%= cl_image_tag('h6qnoivmmd71ttupc10obtw9nt8x', width: 150, height:150, crop: :fill) %>
-        <div>
-          Score <%= @score_game1 %>
-          Temps d'écran <%= @time_game1 %> minutes
+        <div class="profile-game-card-infos">
+          <p><%= @name_game1 %></p>
+          <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game1 %> minutes</p>
+          <p><i class="fa-solid fa-trophy"></i> <%= @score_game1 %> points</p>
         </div>
       </div>
     <% end %>
