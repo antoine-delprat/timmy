@@ -1,83 +1,109 @@
 
 </div><%= link_to "retour", children_path %><div>
+
   <div class="container-child-infos container d-flex">
-    <div>
-      <%= cl_image_tag @child.avatar.key, height: 220, width: 220, crop: :fill, class: "child-profile-img" %>
+    <div class="container-profile">
+        <%= cl_image_tag @child.avatar.key, height: 120, width: 120, crop: :fill, class: "child-profile-img" %>
+        <div class="profile-infos">
+            <h1><%= @child.first_name %></h1>
+              <% @date_dujour = Date.today  %>
+              <% @date_enfant = @child.birth_date  %>
+            <h3><%= (@date_dujour - @date_enfant).to_i / 365  %> ans</h3>
+        </div>
     </div>
-    <div>
-        <h1><%= @child.first_name %></h1>
-          <% @date_dujour = Date.today  %>
-          <% @date_enfant = @child.birth_date  %>
-          <h1>Âge <%= (@date_dujour - @date_enfant).to_i / 365  %> ans</h1>
-          <h1>Temps d'écran total <%= @screen_time %> minutes</h1>
-          <h1>Temps d'écran des 7 derniers jours <%= @screen_week %> minutes</h1>
-    </div>
+      <div class="container-stats container d-flex">
+        <div class="stats-title">
+          <p><i class="fa-solid fa-user-clock"></i> <%=@screen_time %> minutes </p>
+        </div>
+        <div>
+          <p><i class="fa-solid fa-clock-rotate-left"></i> <%= @screen_week %> minutes </p>
+        </div>
+
+      </div>
+
   </div>
-  <div class="text-center text-white">
-  <h1>Score par jeu</h1>
+
+  <div class="h1-score">
+    <h1>Score par jeu</h1>
   </div>
+
   <div class="container container-child-results d-flex">
     <% if @score_game1 > 0 %>
-      <div class="orange-card-game">
-        <%= @name_game1 %>
-        <%= @score_game1 %>
-        <%= @time_game1 %>
+      <div class="green-card-game">
+          <%= @name_game1 %>
+      <%= cl_image_tag('h6qnoivmmd71ttupc10obtw9nt8x', width: 150, height:150, crop: :fill) %>
+        <div>
+          Score <%= @score_game1 %>
+          Temps d'écran <%= @time_game1 %> minutes
+        </div>
       </div>
     <% end %>
     <% if @score_game2 > 0 %>
       <div class="orange-card-game">
         <%= @name_game2 %>
-        <%= @score_game2 %>
-        <%= @time_game2 %>
+      <%= cl_image_tag('ju93er2bzz9bp8dex08rcyptepyg', width: 150, height:150, crop: :fill) %>
+        Score <%= @score_game2 %>
+        Temps d'écran <%= @time_game2 %> minutes
       </div>
     <% end %>
     <% if @score_game3 > 0 %>
-      <div class="orange-card-game">
+      <div class="brown-card-game">
         <%= @name_game3 %>
-        <%= @score_game3 %>
-        <%= @time_game3 %>
+        <%= cl_image_tag('ymkdc556fftqab8qn8e218oc8022', width: 150, height:150, crop: :fill) %>
+          <div>
+          Score <%= @score_game3 %>
+          Temps d'écran <%= @time_game3 %> minutes
+          </div>
       </div>
     <% end %>
         <% if @score_game4 > 0 %>
-      <div class="orange-card-game">
+      <div class="yellow-card-game">
         <%= @name_game4 %>
-        <%= @score_game4 %>
-        <%= @time_game4 %>
+        <%= cl_image_tag('aad0zmb9khrc8fh0u0cxhqf5qejs', width: 150, height:150, crop: :fill) %>
+        Score <%= @score_game4 %>
+        Temps d'écran <%= @time_game4 %> minutes
       </div>
     <% end %>
         <% if @score_game5 > 0 %>
-      <div class="orange-card-game">
+      <div class="red-card-game">
         <%= @name_game5 %>
-        <%= @score_game5 %>
-        <%= @time_game5 %>
+        <%= cl_image_tag('zlkixxix2k01ubbloayurd1b3yix', width: 150, height:150, crop: :fill) %>
+        Score <%= @score_game5 %>
+        Temps d'écran <%= @time_game5 %> minutes
       </div>
     <% end %>
         <% if @score_game6 > 0 %>
-      <div class="orange-card-game">
+      <div class="dark-green-card-game">
         <%= @name_game6 %>
-        <%= @score_game6 %>
-        <%= @time_game6 %>
+        <%= cl_image_tag('elbf92sqitsk70rn6owb4wmfusl7', width: 150, height:150, crop: :fill) %>
+          <div>
+          Score <%= @score_game6 %>
+          Temps d'écran <%= @time_game6 %> minutes
+          </div>
       </div>
     <% end %>
         <% if @score_game7 > 0 %>
-      <div class="orange-card-game">
+      <div class="yellow-card-game">
         <%= @name_game7 %>
-        <%= @score_game7 %>
-        <%= @time_game7 %>
+        <%= cl_image_tag('hf6tyda5z263e5ue5jfm1x0q4wd3', width: 150, height:150, crop: :fill) %>
+        Score <%= @score_game7 %>
+        Temps d'écran <%= @time_game7 %> minutes
       </div>
     <% end %>
         <% if @score_game8 > 0 %>
       <div class="orange-card-game">
         <%= @name_game8 %>
-        <%= @score_game8 %>
-        <%= @time_game8 %>
+        <%= cl_image_tag('wu9oobwf17ni6vxzc4qidu7gt76t', width: 150, height:150, crop: :fill) %>
+        Score <%= @score_game8 %>
+        Temps d'écran <%= @time_game8 %> minutes
       </div>
     <% end %>
             <% if @score_game9 > 0 %>
-      <div class="orange-card-game">
+      <div class="dark-green-card-game">
         <%= @name_game9 %>
-        <%= @score_game9 %>
-        <%= @time_game9 %>
+        <%= cl_image_tag('k0p9ze6d3w8ljss2s2rwb58n2q9i', width: 150, height:150, crop: :fill) %>
+        Score <%= @score_game9 %>
+        Temps d'écran <%= @time_game9 %> minutes
       </div>
     <% end %>
   </div>
