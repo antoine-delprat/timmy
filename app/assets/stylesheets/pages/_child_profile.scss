@@ -9,8 +9,9 @@
   text-align: start;
   background-color: $timmy-orange;
   border-radius: 15px;
-  margin-top: 23px;
-  width: 650px;
+  margin-top: 30px;
+  width: 475px;
+  padding: 5px 0px;
   h1 {
     margin-top: 20px;
   }
@@ -18,7 +19,7 @@
 
 .container-child-results {
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 105px;
 }
 
 .container-stats {
@@ -44,7 +45,7 @@
 
 .profile-game-card {
   padding: 12px;
-  background-color: $timmy-orange;
+  background-color: $timmy-green;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 280px;
