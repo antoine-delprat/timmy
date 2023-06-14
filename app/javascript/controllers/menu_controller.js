@@ -8,8 +8,12 @@ export default class extends Controller {
   }
 
   question() {
+    this.questionTarget.classList.add('active');
     var audioquestion = document.getElementById("sound-question");
     audioquestion.play();
+    setTimeout(function(){
+      document.querySelector('.fa-question').classList.remove('active');
+    },4500);
   }
 
   sound() {

@@ -28,11 +28,10 @@ export default class extends Controller {
     event.target.classList.add("card-revealed")
 
     if (document.querySelectorAll(".card.card-revealed").length % 2 !== 0) {
-    var audioreveal = document.getElementById("sound-reveal");
-    audioreveal.play();
+      var audioreveal = document.getElementById("sound-reveal");
+      audioreveal.play();
     }
     if (document.querySelectorAll(".card.card-revealed").length % 2 == 0) {
-
       var noclick = function(e) {
         e.classList.add('no-click');
       }
@@ -47,30 +46,29 @@ export default class extends Controller {
         audiowon.play();
 
         var animateCard = function(e) {
-          e[0].classList.add('animate');
-          e[1].classList.add('animate');
+          e[0].classList.add('animate', 'zoomcard');
+          e[1].classList.add('animate', 'zoomcard');
           setTimeout(function(){
-            e[0].classList.remove('animate');
-            e[1].classList.remove('animate');
+            e[0].classList.remove('animate', 'zoomcard');
+            e[1].classList.remove('animate', 'zoomcard');
           },700);
         };
         animateCard(document.querySelectorAll(".card.card-revealed"))
 
         setTimeout(() => {
-        document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
-        document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
+          document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
+          document.querySelectorAll(".card.card-revealed")[0].classList.replace("card-revealed", "card-won")
 
-        if (document.querySelectorAll(".card.card-won").length == 16) {
-          document.getElementById("cardboard").classList.add("shake");
-          var audiovictory = document.getElementById("sound-victory");
-          audiovictory.play();
+          if (document.querySelectorAll(".card.card-won").length == 16) {
+            document.getElementById("cardboard").classList.add("shake");
+            var audiovictory = document.getElementById("sound-victory");
+            audiovictory.play();
 
-          document.getElementById("modal-bloc").innerHTML = "<div id=\"modal-win\"><h1>Bravo !</h1><div class=\"d-flex justify-content-center mt-5 mb-5\"><div><div class=\"card two card-won\"></div></div><div class=\"d-grid\"><div class=\"d-flex\"><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div><div><i class=\"fa-solid fa-star\"></i></div><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div></div><h3 class=\"align-self-end\">+ 10 points</h3></div></div><div class=\"d-flex justify-content-center mt-5 mb-5\"><a data-turbo-method=\"patch\" href=\"/children/" + this.childValue + "/games/" + this.gameValue + "/child_games/" + this.childgameValue + "?link=games\"><i class=\"fa-solid fa-house\"></i></a><a data-turbo-method=\"patch\" href=\"/children/" + this.childValue + "/games/" + this.gameValue + "/child_games/" + this.childgameValue + "?link=newgame\"><i class=\"fa-solid fa-rotate-right\"></i></a></div></div>"
-          document.getElementById("cardboard").style.zIndex = "-3"
-        }
-        document.querySelectorAll(".card").forEach(element => okclick(element));
+            document.getElementById("modal-bloc").innerHTML = "<div id=\"modal-win\"><h1>Bravo !</h1><div class=\"d-flex justify-content-center mt-5 mb-5\"><div><div class=\"card two card-won\"></div></div><div class=\"d-grid\"><div class=\"d-flex\"><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div><div><i class=\"fa-solid fa-star\"></i></div><div class=\"mt-3\"><i class=\"fa-solid fa-star\"></i></div></div><h3 class=\"align-self-end\">+ 10 points</h3></div></div><div class=\"d-flex justify-content-center mt-5 mb-5\"><a data-turbo-method=\"patch\" href=\"/children/" + this.childValue + "/games/" + this.gameValue + "/child_games/" + this.childgameValue + "?link=games\"><i class=\"fa-solid fa-house\"></i></a><a data-turbo-method=\"patch\" href=\"/children/" + this.childValue + "/games/" + this.gameValue + "/child_games/" + this.childgameValue + "?link=newgame\"><i class=\"fa-solid fa-rotate-right\"></i></a></div></div>"
+            document.getElementById("cardboard").style.zIndex = "-3"
+          }
+          document.querySelectorAll(".card").forEach(element => okclick(element));
         }, 1000);
-
       }
       else {
         var audiofail = document.getElementById("sound-fail");
