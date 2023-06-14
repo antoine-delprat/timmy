@@ -24,6 +24,12 @@
   margin-right: 5px;
 }
 
+.fa-question.back-arrow.active {
+  color: #eaeaea;
+  background: #dd9f43;
+  box-shadow: 1px 1px 8px 2px #0000001f;
+}
+
 .back-arrow-disabled {
   color: #a7a7a7;
   background: #eaeaea;
@@ -31,5 +37,5 @@
   border-radius: 50%;
   text-decoration: none;
   padding: 35px 10px;
-  box-shadow: 1px 1px 8px -1px #0000001f;
+  box-shadow: 1px 1px 8px 2px #0000001f;
 }
