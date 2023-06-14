@@ -16,10 +16,9 @@
   }
 }
 
-
 .container-child-results {
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .container-stats {
@@ -45,13 +44,19 @@
 
 .profile-game-card {
   padding: 12px;
-  background-color: $timmy-green;
+  background-color: $timmy-orange;
   border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 280px;
   display: flex;
   align-items: center;
 }
 
 .profile-game-card-infos {
-  padding: 10px;
+  padding-left: 10px;
   text-align: start;
+  color: white;
+  p {
+    margin: 7px 0px;
+    }
 }
