@@ -6,10 +6,8 @@ class ChildrenController < ApplicationController
 
   def create
     @child = Child.new(child_params)
-    # @child.save!
-    # redirect_to children_path
+    @child.user = current_user
     if @child.save
-      raise
       redirect_to children_path
     else
       render :new, status: :unprocessable_entity
@@ -52,7 +50,7 @@ class ChildrenController < ApplicationController
   private
 
   def child_params
-    params.require(:child).permit(:first_name, :birth_date, :alarm)
+    params.require(:child).permit(:first_name, :birth_date, :alarm, :avatar)
   end
 
 end
