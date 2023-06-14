@@ -1,23 +1,83 @@
 
-<div class="container">
-<br>
-  <%= cl_image_tag @child.avatar.key, height: 220, width: 220, crop: :fill %>
-
-    <h1><%= @child.first_name %></h1>
-      <% @date_dujour = Date.today  %>
-      <% @date_enfant = @child.birth_date  %>
-      <h1>Age <%= (@date_dujour - @date_enfant).to_i / 365  %> ans</h1>
-      <h1>temps d'ecran <%= @screen_time %></h1>
-      <h1>temps d'ecran des 7 derniers jours<%= @screen_week %></h1>
-
-      <br>
-      <% @child_game.each do |game| %>
-         <%= game.game.name %>
-         <%= game.score %>
-
-      <% end %>
-
-
-
-<br><%= link_to "retour", children_path %>
-<br>
+</div><%= link_to "retour", children_path %><div>
+  <div class="container-child-infos container d-flex">
+    <div>
+      <%= cl_image_tag @child.avatar.key, height: 220, width: 220, crop: :fill, class: "child-profile-img" %>
+    </div>
+    <div>
+        <h1><%= @child.first_name %></h1>
+          <% @date_dujour = Date.today  %>
+          <% @date_enfant = @child.birth_date  %>
+          <h1>Âge <%= (@date_dujour - @date_enfant).to_i / 365  %> ans</h1>
+          <h1>Temps d'écran total <%= @screen_time %> minutes</h1>
+          <h1>Temps d'écran des 7 derniers jours <%= @screen_week %> minutes</h1>
+    </div>
+  </div>
+  <div class="text-center text-white">
+  <h1>Score par jeu</h1>
+  </div>
+  <div class="container container-child-results d-flex">
+    <% if @score_game1 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game1 %>
+        <%= @score_game1 %>
+        <%= @time_game1 %>
+      </div>
+    <% end %>
+    <% if @score_game2 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game2 %>
+        <%= @score_game2 %>
+        <%= @time_game2 %>
+      </div>
+    <% end %>
+    <% if @score_game3 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game3 %>
+        <%= @score_game3 %>
+        <%= @time_game3 %>
+      </div>
+    <% end %>
+        <% if @score_game4 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game4 %>
+        <%= @score_game4 %>
+        <%= @time_game4 %>
+      </div>
+    <% end %>
+        <% if @score_game5 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game5 %>
+        <%= @score_game5 %>
+        <%= @time_game5 %>
+      </div>
+    <% end %>
+        <% if @score_game6 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game6 %>
+        <%= @score_game6 %>
+        <%= @time_game6 %>
+      </div>
+    <% end %>
+        <% if @score_game7 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game7 %>
+        <%= @score_game7 %>
+        <%= @time_game7 %>
+      </div>
+    <% end %>
+        <% if @score_game8 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game8 %>
+        <%= @score_game8 %>
+        <%= @time_game8 %>
+      </div>
+    <% end %>
+            <% if @score_game9 > 0 %>
+      <div class="orange-card-game">
+        <%= @name_game9 %>
+        <%= @score_game9 %>
+        <%= @time_game9 %>
+      </div>
+    <% end %>
+  </div>
