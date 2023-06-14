@@ -61,3 +61,48 @@
     margin: 7px 0px;
     }
 }
+
+
+.tiles {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  margin-right: 3px;
+
+  &.one {
+    background-image: image-url("games/memory/elephant.jpeg");
+    background-size: contain;
+  }
+  &.two {
+    background-image: image-url("tiles/calcul.jpeg");
+    background-size: contain;
+  }
+  &.three {
+    background-image: image-url("games/memory/carte.jpeg");
+    background-size: contain;
+  }
+  &.four {
+    background-image: image-url("tiles/lions.jpeg");
+    background-size: contain;
+  }
+  &.five {
+    background-image: image-url("tiles/papillons.jpeg");
+    background-size: contain;
+  }
+  &.six {
+    background-image: image-url("tiles/rebus.jpeg");
+    background-size: contain;
+  }
+  &.seven {
+    background-image: image-url("tiles/coloriage.jpeg");
+    background-size: contain;
+  }
+  &.eight {
+    background-image: image-url("tiles/billes.jpeg");
+    background-size: contain;
+  }
+  &.nine {
+    background-image: image-url("tiles/bus.jpeg");
+    background-size: contain;
+  }
+}
