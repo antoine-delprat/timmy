@@ -10,6 +10,7 @@
   width: 72.5px !important;
   height: 72.5px !important;
   border-radius: 50%;
+  box-shadow: 1px 1px 8px -1px #0000001f;
 }
 
 .btn-circle:hover {
@@ -22,6 +23,10 @@
 
 .dropdown-menu {
   background-color: $timmy-orange;
+  border-radius: 10px;
+  border: transparent;
+  margin-top: 5px !important;
+  box-shadow: 1px 1px 8px -1px #0000001f;
 }
 
 .dropdown-item {
