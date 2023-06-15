@@ -236,4 +236,52 @@ score_m = ChildGame.create!(
   end_date: DateTime.new(2023, 5, 20, 16, 54, 0)
 )
 
+score_n = ChildGame.create!(
+  child: arnold,
+  game: game_four,
+  score: 40,
+  start_date: DateTime.new(2023, 6, 2, 16, 30, 0),
+  end_date: DateTime.new(2023, 6, 2, 16, 45, 0)
+)
+
+score_o = ChildGame.create!(
+  child: arnold,
+  game: game_six,
+  score: 50,
+  start_date: DateTime.new(2023, 5, 20, 16, 40, 0),
+  end_date: DateTime.new(2023, 5, 20, 16, 54, 0)
+)
+
+score_p = ChildGame.create!(
+  child: arnold,
+  game: game_three,
+  score: 20,
+  start_date: DateTime.new(2023, 6, 10, 14, 30, 0),
+  end_date: DateTime.new(2023, 6, 10, 14, 46, 0)
+)
+
+score_q = ChildGame.create!(
+  child: arnold,
+  game: game_seven,
+  score: 25,
+  start_date: DateTime.new(2023, 6, 10, 14, 30, 0),
+  end_date: DateTime.new(2023, 6, 10, 14, 46, 0)
+)
+
+score_r = ChildGame.create!(
+  child: arnold,
+  game: game_eight,
+  score: 15,
+  start_date: DateTime.new(2023, 6, 10, 15, 30, 0),
+  end_date: DateTime.new(2023, 6, 10, 15, 55, 0)
+)
+
+score_s = ChildGame.create!(
+  child: arnold,
+  game: game_nine,
+  score: 30,
+  start_date: DateTime.new(2023, 6, 10, 16, 30, 0),
+  end_date: DateTime.new(2023, 6, 10, 16, 45, 0)
+)
+
 puts "Seeds finished!"
