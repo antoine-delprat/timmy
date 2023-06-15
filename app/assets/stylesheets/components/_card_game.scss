@@ -101,8 +101,9 @@
   background-size: cover;
   background-position: center;
   height: 243px;
-  display: flex;
-  align-items: end;
+  // display: flex;
+  // align-items: stretch;
+  align-content: space-between;
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -110,11 +111,20 @@
   border-radius: 10px;
 }
 
+.icone {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  padding: 5px 5px;
+  height: 80%;
+}
+
 .legend {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   width: 100%;
+  height: 20%;
   padding: 3px 9px;
   border-radius: 0px 0px 10px 10px;
   color: white;
@@ -199,24 +209,54 @@
 
 .icone-orange {
   color: $timmy-orange;
+  font-size: 25px;
+  background: white;
+  padding: 18px 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.36);
 }
 
 .icone-green {
   color: $timmy-green;
+  font-size: 23px;
+  background: white;
+  padding: 18px 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.36);
 }
 
 .icone-dark-green {
   color: $timmy-bright-green;
+  font-size: 23px;
+  background: white;
+  padding: 17px 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.36);
 }
 
 .icone-brown {
   color: $timmy-brown;
+  font-size: 21px;
+  background: white;
+  padding: 18px 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.36);
 }
 
 .icone-red {
   color: $timmy-red;
+  font-size: 25px;
+  background: white;
+  padding: 18px 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.36);
 }
 
 .icone-yellow {
   color: $timmy-yellow;
+  font-size: 24px;
+  background: white;
+  padding: 17px 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.36);
 }
