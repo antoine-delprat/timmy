@@ -5,7 +5,7 @@
 </div>
 
 <div class="new-title"><h1>Votre enfant </h1></div>
-<div class="new-child container">
+<div data-controller="tooltip" class="new-child container">
   <%= simple_form_for @child do |f| %>
     <div class="name">
       <%= f.input :first_name, label: "Prénom", placeholder: "Charlotte, ..." %>
@@ -14,8 +14,19 @@
       <%= f.input :birth_date, as: :date, label: "Date de naissance", html5: true %>
     </div>
       <%= f.input :avatar, as: :file %>
-      <div class="alarm">
-        <%= f.input :alarm, label: "Alerte sonore au bout de 30 min ?" %>
+      <div class="alarm d-flex">
+        <%= f.input :alarm, label: "Alerte sonore" %>
+        <i data-action="click->tooltip#info" class="fa-solid fa-circle-info"></i>
+        <div id="modal-info-alarm">
+        <%= audio_tag "alertevoix.mp3", id: "sound-alertevoix" %>
+        <%= audio_tag "alerteintro.mp3", id: "sound-alerteintro" %>
+        <%= audio_tag "alertefin.mp3", id: "sound-alertefin" %>
+          <div class="content-tooltip">
+            <p data-action="click->tooltip#hide" class="cross">x</p>
+            <p class="text-tooltip">En activant cette option, un signal sonore se déclenche au bout de 30min de jeu.</p>
+            <i class="fa-solid fa-hand-point-right pointer"></i><i data-action="click->tooltip#alarm" class="fa-solid fa-bell bell"></i>
+          </div>
+        </div>
       </div>
     <div class="Valider">
         <%= f.submit "Valider", class: "validation" %>
