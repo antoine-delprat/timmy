@@ -91,7 +91,7 @@
   }
   &.five {
     background-image: image-url("tiles/papillons.jpeg");
-    background-size: contain;
+    background-size: cover;
   }
   &.six {
     background-image: image-url("tiles/rebus.jpeg");

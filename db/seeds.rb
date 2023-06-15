@@ -32,14 +32,14 @@ fran = User.create!(
 
 puts "Creating children..."
 
-alba = Child.create!(
-  user: antoine,
-  first_name: 'Alba',
-  birth_date: DateTime.new(2019, 1, 30),
-  alarm: true
-)
-file = File.open(Rails.root.join("db/seeds/children/fille.webp"))
-alba.avatar.attach(io: file, filename: "fille.webp", content_type: "image/webp")
+# alba = Child.create!(
+#   user: antoine,
+#   first_name: 'Alba',
+#   birth_date: DateTime.new(2019, 1, 30),
+#   alarm: true
+# )
+# file = File.open(Rails.root.join("db/seeds/children/fille.webp"))
+# alba.avatar.attach(io: file, filename: "fille.webp", content_type: "image/webp")
 
 hugo = Child.create!(
   user: antoine,
@@ -144,27 +144,27 @@ game_nine.photo.attach(io: file, filename: "bus.jpeg", content_type: "image/jpeg
 
 puts "Creating results..."
 
-score_a = ChildGame.create!(
-  child: alba,
-  game: game_one,
-  score: 25,
-  start_date: DateTime.new(2023, 5, 20, 16, 30, 0),
-  end_date: DateTime.new(2023, 5, 20, 16, 54, 0)
-)
-score_b = ChildGame.create!(
-  child: alba,
-  game: game_three,
-  score: 10,
-  start_date: DateTime.new(2023, 5, 23, 18, 7, 0),
-  end_date: DateTime.new(2023, 5, 23, 18, 32, 0)
-)
-score_c = ChildGame.create!(
-  child: alba,
-  game: game_six,
-  score: 60,
-  start_date: DateTime.new(2023, 5, 29, 11, 58, 0),
-  end_date: DateTime.new(2023, 5, 29, 12, 17, 0)
-)
+# score_a = ChildGame.create!(
+#   child: alba,
+#   game: game_one,
+#   score: 25,
+#   start_date: DateTime.new(2023, 5, 20, 16, 30, 0),
+#   end_date: DateTime.new(2023, 5, 20, 16, 54, 0)
+# )
+# score_b = ChildGame.create!(
+#   child: alba,
+#   game: game_three,
+#   score: 10,
+#   start_date: DateTime.new(2023, 5, 23, 18, 7, 0),
+#   end_date: DateTime.new(2023, 5, 23, 18, 32, 0)
+# )
+# score_c = ChildGame.create!(
+#   child: alba,
+#   game: game_six,
+#   score: 60,
+#   start_date: DateTime.new(2023, 5, 29, 11, 58, 0),
+#   end_date: DateTime.new(2023, 5, 29, 12, 17, 0)
+# )
 score_d = ChildGame.create!(
   child: hugo,
   game: game_one,
@@ -174,17 +174,17 @@ score_d = ChildGame.create!(
 )
 score_e = ChildGame.create!(
   child: hugo,
-  game: game_two,
+  game: game_eight,
   score: 35,
-  start_date: DateTime.new(2023, 6, 7, 17, 7, 0),
-  end_date: DateTime.new(2023, 6, 7, 17, 32, 0)
+  start_date: DateTime.new(2023, 6, 10, 17, 7, 0),
+  end_date: DateTime.new(2023, 6, 10, 17, 32, 0)
 )
 score_f = ChildGame.create!(
   child: hugo,
-  game: game_five,
+  game: game_nine,
   score: 50,
-  start_date: DateTime.new(2023, 6, 2, 15, 58, 0),
-  end_date: DateTime.new(2023, 6, 2, 16, 17, 0)
+  start_date: DateTime.new(2023, 6, 11, 15, 58, 0),
+  end_date: DateTime.new(2023, 6, 11, 16, 17, 0)
 )
 score_g = ChildGame.create!(
   child: maggie,
