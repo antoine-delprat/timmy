@@ -5,7 +5,7 @@
   <% end %>
 <div>
 
-  <div class="container-child-infos container d-flex">
+  <div data-controller="childview" class="container-child-infos container d-flex">
     <div class="container-profile">
         <%= cl_image_tag @child.avatar.key, height: 120, width: 120, crop: :fill, class: "child-profile-img" %>
         <div class="profile-infos">
@@ -23,7 +23,10 @@
           <p><i class="fa-solid fa-clock-rotate-left"></i> <%= @screen_week %> minutes / 7 jours </p>
         </div>
         <div class="stats-title">
-        <p><i class="fa-solid fa-bell"></i> Alerte 30min active</p>
+          <p><i data-action="click->childview#alarm" class="fa-solid fa-bell"></i> alerte 30min active</p>
+          <%= audio_tag "alertevoix.mp3", id: "sound-alertevoix" %>
+          <%= audio_tag "alerteintro.mp3", id: "sound-alerteintro" %>
+          <%= audio_tag "alertefin.mp3", id: "sound-alertefin" %>
         </div>
       </div>
   </div>
