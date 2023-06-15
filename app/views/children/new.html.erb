@@ -9,7 +9,7 @@
 <div class="new-child container">
   <%= simple_form_for @child do |f| %>
     <div class="name">
-      <%= f.input :first_name, label: "Prénom", placeholder: "Charlotte" %>
+      <%= f.input :first_name, label: "Prénom", placeholder: "Charlotte, ..." %>
     </div>
     <div class="birth_date">
       <%= f.input :birth_date, as: :date, label: "Date de naissance", html5: true %>
