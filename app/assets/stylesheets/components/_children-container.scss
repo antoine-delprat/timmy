@@ -86,3 +86,47 @@
   bottom: 35px;
   right: 35px;
 }
+
+.alarm .fa-circle-info {
+  margin-left: 9px;
+  margin-top: 4px;
+}
+
+#modal-info-alarm {
+  display: none;
+  position: absolute;
+  right: 243px;
+  bottom: 296px;
+  text-align: center;
+  width: 252px;
+  height: 152px;
+  padding: 10px;
+  color: white;
+  background-color: #FEBF63;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 4px 2px 8px -1px #0000001f;
+
+  .content-tooltip {
+    margin-top: -5px;
+  }
+
+  .cross {
+    margin: 0px 3px 3px 0px;
+    font-size: 17px;
+    text-align: end;
+  }
+
+  .text-tooltip {
+    margin: 0px 0px 11px;
+  }
+
+  .pointer {
+    font-size: 21px;
+    margin-right: 10px;
+  }
+
+  .bell {
+    font-size: 21px;
+  }
+}
