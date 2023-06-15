@@ -32,94 +32,114 @@
   </div>
 
   <div class="container container-child-results">
-    <% if @score_game1 > 0 %>
-      <div class="profile-game-card">
-      <div class="tiles one"></div>
-        <div class="profile-game-card-infos">
-          <p><%= @name_game1 %></p>
-          <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game1 %> minutes</p>
-          <p><i class="fa-solid fa-trophy"></i> <%= @score_game1 %> points</p>
+    <div class="row">
+      <% if @score_game1 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+          <div class="tiles one"></div>
+            <div class="profile-game-card-infos">
+              <p><%= @name_game1 %></p>
+              <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game1 %> minutes</p>
+              <p><i class="fa-solid fa-trophy"></i> <%= @score_game1 %> points</p>
+            </div>
+          </div>
         </div>
-      </div>
-    <% end %>
-    <% if @score_game2 > 0 %>
-      <div class="profile-game-card">
-      <div class="tiles two"></div>
-        <div class="profile-game-card-infos">
-          <p><%= @name_game2 %></p>
-          <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game2 %> minutes</p>
-          <p><i class="fa-solid fa-trophy"></i> <%= @score_game2 %> points</p>
+      <% end %>
+      <% if @score_game2 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+          <div class="tiles two"></div>
+            <div class="profile-game-card-infos">
+              <p><%= @name_game2 %></p>
+              <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game2 %> minutes</p>
+              <p><i class="fa-solid fa-trophy"></i> <%= @score_game2 %> points</p>
+            </div>
+          </div>
         </div>
-      </div>
-    <% end %>
-    <% if @score_game3 > 0 %>
-      <div class="profile-game-card">
-        <div class="tiles three"></div>
-          <div class="profile-game-card-infos">
-          <p><%= @name_game3 %></p>
-          <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game3 %> minutes</p>
-          <p><i class="fa-solid fa-trophy"></i> <%= @score_game3 %> points</p>
+      <% end %>
+      <% if @score_game3 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+            <div class="tiles three"></div>
+              <div class="profile-game-card-infos">
+              <p><%= @name_game3 %></p>
+              <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game3 %> minutes</p>
+              <p><i class="fa-solid fa-trophy"></i> <%= @score_game3 %> points</p>
+              </div>
           </div>
-      </div>
-    <% end %>
-        <% if @score_game4 > 0 %>
-      <div class="profile-game-card">
-        <div class="tiles four"></div>
-          <div class="profile-game-card-infos">
-            <p><%= @name_game4 %></p>
-            <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game4 %> minutes</p>
-            <p><i class="fa-solid fa-trophy"></i> <%= @score_game4 %> points</p>
+        </div>
+      <% end %>
+      <% if @score_game4 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+            <div class="tiles four"></div>
+              <div class="profile-game-card-infos">
+                <p><%= @name_game4 %></p>
+                <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game4 %> minutes</p>
+                <p><i class="fa-solid fa-trophy"></i> <%= @score_game4 %> points</p>
+              </div>
           </div>
-      </div>
-    <% end %>
-        <% if @score_game5 > 0 %>
-      <div class="profile-game-card">
-        <div class="tiles five"></div>
-          <div class="profile-game-card-infos">
-            <p><%= @name_game5 %></p>
-            <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game5 %> minutes</p>
-            <p><i class="fa-solid fa-trophy"></i> <%= @score_game5 %> points</p>
+        </div>
+      <% end %>
+      <% if @score_game5 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+            <div class="tiles five"></div>
+              <div class="profile-game-card-infos">
+                <p><%= @name_game5 %></p>
+                <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game5 %> minutes</p>
+                <p><i class="fa-solid fa-trophy"></i> <%= @score_game5 %> points</p>
+              </div>
           </div>
-      </div>
-    <% end %>
-        <% if @score_game6 > 0 %>
-      <div class="profile-game-card">
-        <div class="tiles six"></div>
-          <div class="profile-game-card-infos">
-            <p><%= @name_game6 %></p>
-            <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game6 %> minutes</p>
-            <p><i class="fa-solid fa-trophy"></i> <%= @score_game6 %> points</p>
+        </div>
+      <% end %>
+      <% if @score_game6 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+            <div class="tiles six"></div>
+              <div class="profile-game-card-infos">
+                <p><%= @name_game6 %></p>
+                <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game6 %> minutes</p>
+                <p><i class="fa-solid fa-trophy"></i> <%= @score_game6 %> points</p>
+              </div>
           </div>
-      </div>
-    <% end %>
-        <% if @score_game7 > 0 %>
-      <div class="profile-game-card">
-        <div class="tiles seven"></div>
-          <div class="profile-game-card-infos">
-            <p><%= @name_game7 %></p>
-            <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game7 %> minutes</p>
-            <p><i class="fa-solid fa-trophy"></i> <%= @score_game7 %> points</p>
+        </div>
+      <% end %>
+      <% if @score_game7 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+            <div class="tiles seven"></div>
+              <div class="profile-game-card-infos">
+                <p><%= @name_game7 %></p>
+                <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game7 %> minutes</p>
+                <p><i class="fa-solid fa-trophy"></i> <%= @score_game7 %> points</p>
+              </div>
           </div>
-      </div>
-    <% end %>
-        <% if @score_game8 > 0 %>
-      <div class="profile-game-card">
-        <div class="tiles eight"></div>
-          <div class="profile-game-card-infos">
-            <p><%= @name_game8 %></p>
-            <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game8 %> minutes</p>
-            <p><i class="fa-solid fa-trophy"></i> <%= @score_game8 %> points</p>
+        </div>
+      <% end %>
+      <% if @score_game8 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+            <div class="tiles eight"></div>
+              <div class="profile-game-card-infos">
+                <p><%= @name_game8 %></p>
+                <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game8 %> minutes</p>
+                <p><i class="fa-solid fa-trophy"></i> <%= @score_game8 %> points</p>
+              </div>
           </div>
-      </div>
-    <% end %>
-            <% if @score_game9 > 0 %>
-      <div class="profile-game-card">
-        <div class="tiles nine"></div>
-          <div class="profile-game-card-infos">
-            <p><%= @name_game9 %></p>
-            <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game9 %> minutes</p>
-            <p><i class="fa-solid fa-trophy"></i> <%= @score_game9 %> points</p>
+        </div>
+      <% end %>
+      <% if @score_game9 > 0 %>
+        <div class="col d-grid justify-content-center">
+          <div class="profile-game-card">
+            <div class="tiles nine"></div>
+              <div class="profile-game-card-infos">
+                <p><%= @name_game9 %></p>
+                <p><i class="fa-solid fa-tablet-screen-button"></i> <%= @time_game9 %> minutes</p>
+                <p><i class="fa-solid fa-trophy"></i> <%= @score_game9 %> points</p>
+              </div>
           </div>
-      </div>
-    <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
