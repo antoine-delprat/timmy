@@ -1,5 +1,23 @@
 .container-devise {
-  width: 400px;
+  width: 30%;
   margin: auto;
   text-align: center;
+  margin-top: 65px;
 }
+
+.form-inputs {
+  color: white;
+  margin-bottom: 20px;
+  }
+
+.form-control {
+  border-radius: 8px;
+}
+
+.form-control::placeholder {
+  color: rgb(183, 183, 183) !important;
+  }
+
+  .form-actions {
+    margin-bottom: 10px;
+  }
