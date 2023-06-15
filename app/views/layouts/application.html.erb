@@ -35,11 +35,7 @@
     <meta name="twitter:image:src" content="<%= meta_image %>">
   </head>
   <body>
-    <% if ["children"].include?(params[:controller]) %>
-      <%= render "shared/navbar_burger_menu"  %>
-    <% end %>
     <%= render "shared/flashes" %>
-
     <%= yield %>
   </body>
 </html>
