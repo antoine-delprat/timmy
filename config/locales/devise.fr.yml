@@ -4,6 +4,8 @@ fr:
   activerecord:
     attributes:
       user:
+        last_name: "Nom"
+        first_name: "Prénom"
         confirmation_sent_at: Date d'envoi de la confirmation
         confirmation_token: Clé de confirmation du mot de passe
         confirmed_at: Date de confirmation
@@ -29,6 +31,8 @@ fr:
         updated_at: Date de mise à jour
     models:
       user: Utilisateur
+      last_name: Nom
+      first_name: Prénom
   devise:
     confirmations:
       confirmed: Votre compte a bien été confirmé.
