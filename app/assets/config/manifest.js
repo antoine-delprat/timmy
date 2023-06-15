@@ -8,3 +8,6 @@
 //= link reveal.mp3
 //= link question.mp3
 //= link birds.mp3
+//= link alertevoix.mp3
+//= link alerteintro.mp3
+//= link alertefin.mp3

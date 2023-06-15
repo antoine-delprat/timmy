@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import ChildviewController from "./childview_controller"
+application.register("childview", ChildviewController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
@@ -12,3 +15,6 @@ application.register("memory", MemoryController)
 
 import MenuController from "./menu_controller"
 application.register("menu", MenuController)
+
+import TooltipController from "./tooltip_controller"
+application.register("tooltip", TooltipController)
