@@ -10,6 +10,23 @@ export default class extends Controller {
 
   connect() {
     console.log("controller memory is connected!");
+
+    const cards = ['one', 'one', 'two', 'two', 'three', 'three', 'four', 'four', 'five', 'five', 'six', 'six', 'seven', 'seven', 'eight', 'eight']
+    const shuffleArray = (array) => {
+      for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+      }
+      return array
+    }
+    let randomCards = shuffleArray(cards)
+    this.cardTargets.forEach((target) => {
+      target.classList.add(randomCards[0])
+      randomCards.splice(0, 1)
+    })
+
     var audiobirds = document.getElementById("sound-birds");
     audiobirds.loop = true;
     audiobirds.play();
