@@ -1,33 +1,74 @@
-// Specific CSS for your home-page
-.container-homepage .cover-homepage {
-  width: 100%;
-  min-height: calc(100vh - 50px);
-  background-size: cover;
-  background-position: center;
-  padding: 20px 20px;
-}
-
-.container-homepage-content {
-  padding-top: 10rem ;
-  color: white;
-}
-
-.home-h2 {
-  font-size: 38px;
-  font-weight: bold;
-  font-family: $headers-font;
-  min-height: 50px;
+#home {
+  .container-homepage .cover-homepage {
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    background-size: cover;
+    background-position: center;
   }
 
-#home-p {
-  width: 800px;
-  margin: 1rem 0 4rem;
-  text-align: justify;
+  .container-homepage-content {
+    width: 839px;
+    padding-top: 11rem ;
+    color: white;
+    text-align: end;
+  }
+
+  .home-h2 {
+    text-align: start;
+    margin-bottom: 1.5rem;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: $headers-font;
+    min-height: 50px;
+    }
+
+  #home-p {
+    margin: 1rem 0 4rem;
+    text-align: justify;
+  }
+
+  .timmy-link {
+    font-family: $headers-font;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
 }
 
-.timmy-link {
-  font-family: $headers-font;
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
+@media(max-width: 950px) {
+  #home .container-homepage-content {
+    width: 600px;
+  }
+}
+@media(max-width: 770px) {
+  #home .container-homepage-content {
+    width: 535px;
+  }
+}
+@media(max-width: 550px) {
+  #home .container-homepage-content {
+    width: 420px;
+    text-align: center;
+    padding-top: 6rem;
+    .home-h2 {
+      text-align: center;
+    }
+  }
+}
+@media(max-width: 450px) {
+  #home .container-homepage-content {
+    width: 360px;
+    padding-top: 2rem;
+  }
+}
+@media(max-width: 360px) {
+  #home .container-homepage-content {
+    width: 300px;
+    .home-h2 {
+      font-size: 30px;
+    }
+    .btn-inscription {
+      font-size: 21px;
+    }
+  }
 }

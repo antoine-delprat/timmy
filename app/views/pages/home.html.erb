@@ -1,1 +1,29 @@
-<%= render "homepage" %>
+<div id="home">
+  <div class="navbar-homepage-wrapper">
+    <div class="navbar-homepage container">
+      <div><%= link_to "Timmy !", root_path, class: "timmy-link" %></div>
+      <div> <%= link_to "Connexion", new_user_session_path, class: "btn-connexion" %></div>
+    </div>
+  </div>
+  <div class="container-homepage">
+    <div class="cover-homepage" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(<%= image_path 'game.jpg'%>)">
+      <div class="container-homepage-content container">
+          <h2 class="home-h2"><span id="animated-h2"></span></h2>
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <script>
+            var typed = new Typed('#animated-h2', {
+              strings: ["Des jeux pour apprendre et grandir en s'amusant"],
+              typeSpeed: 30,
+              showCursor: false,
+              startDelay: 1000,
+            });
+          </script>
+          <div id="home-p">
+            <p>Timmy ! est une application web créée pour que vos jeunes enfants (de 4 à 8 ans) puissent s'amuser en développant leurs capacités cognitives. Nos jeux mettent l'accent sur l'interactivité, élément primordial dans l'apprentissage de l'enfant.</p>
+            <p>Notre application permet également de suivre le temps que les enfants passent à jouer pour les protéger d'une trop longue exposition aux écrans.</p>
+          </div>
+          <%= link_to "Rejoignez l'aventure", new_user_registration_path, class: "btn-inscription" %>
+      </div>
+    </div>
+  </div>
+</div>

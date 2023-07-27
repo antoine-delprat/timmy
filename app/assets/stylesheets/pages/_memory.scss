@@ -1,3 +1,7 @@
+body:has(#game) {
+  background-color: #84d772;
+}
+
 #game {
   display: flex;
   align-items: center;

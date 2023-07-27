@@ -8,20 +8,9 @@
 @import "font-awesome";
 
 body {
-  background-image: url(./blob/blob-test.svg);
-}
-
-
-body:has(#list-of-games) {
-  background-image: none;
+  // background-image: url(./blob/blob-test.svg);
   background-color: $timmy-blue;
 }
-
-body:has(#game) {
-  background-image: none;
-  background-color: #84d772;
-}
-
 
 // Your CSS partials
 @import "components/index";
