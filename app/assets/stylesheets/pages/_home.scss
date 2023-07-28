@@ -22,6 +22,10 @@
     min-height: 50px;
     }
 
+  .fixed-title {
+    display: none;
+  }
+
   #home-p {
     margin: 1rem 0 4rem;
     text-align: justify;
@@ -32,6 +36,15 @@
     color: white;
     font-size: 30px;
     text-decoration: none;
+  }
+}
+
+@media(max-width: 995px) {
+  #home .fixed-title {
+    display: block;
+  }
+  #home .animated-title {
+    display: none;
   }
 }
 
