@@ -1,8 +1,5 @@
-<div class="navbar-homepage-wrapper-devise">
-  <div class="navbar-homepage container">
-    <div><%= link_to "Timmy !", root_path, class: "timmy-link" %></div>
-    <div></div>
-  </div>
+<div id="devise-back">
+  <%= link_to "< retour", root_path, class: "devise-back-link" %>
 </div>
 
   <div class="container-devise">
@@ -12,12 +9,11 @@
       <%= f.error_notification %>
 
       <div class="form-inputs">
-        <%= f.input :first_name, label: "Prénom", placeholder: "Martin" %>
+        <%= f.input :first_name, label: "Prénom", placeholder: "Martin", autofocus: true %>
         <%= f.input :last_name, label: "Nom", placeholder: "Dupont" %>
         <%= f.input :email,
                     placeholder: "martindupont@email.fr",
                     required: true,
-                    autofocus: true,
                     input_html: { autocomplete: "email" }%>
         <%= f.input :password, label: "Mot de passe",
                     placeholder: "Mot de passe",
