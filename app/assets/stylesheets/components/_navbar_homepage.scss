@@ -1,6 +1,8 @@
 .navbar-homepage-wrapper {
   background-color: $timmy-blue;
   padding: 2px 2px;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-homepage-wrapper-devise {
