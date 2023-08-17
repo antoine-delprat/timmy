@@ -2,12 +2,13 @@
   <div class="container-fluid">
     <div class="dropdown">
     <button class="btn btn-primary btn-circle dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <svg xmlns="http://www.w3.org/2000/svg" height="2.2em" viewBox="0 0 448 512"><style>svg{fill:#fefefe}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>    
+      <svg xmlns="http://www.w3.org/2000/svg" height="2.2em" viewBox="0 0 448 512"><style>svg{fill:#fefefe}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
     </button>
     <ul class="dropdown-menu">
-        <% current_user.children.each do |child| %>
+      <% current_user.children.each do |child| %>
         <li><%= link_to child.first_name, child_path(child), class: "dropdown-item" %></li>
-        <% end %>
+      <% end %>
+      <li><%= link_to "Créer un profil", new_child_path, class: "dropdown-item" %></li>
       <li><%= link_to "Déconnexion", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %></li>
     </ul>
   </div>
