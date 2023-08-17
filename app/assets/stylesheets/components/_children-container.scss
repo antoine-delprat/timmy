@@ -6,11 +6,12 @@
 }
 
 .children-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
   width: 800px;
   margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   font-size: 2rem;
   transition-duration: 0.1s;
   a {
@@ -25,6 +26,19 @@
     border-radius: 150px;
     border: 9px solid #FEBF63;
     box-shadow: 4px 2px 8px -1px #0000001f;
+  }
+}
+@media(max-width: 800px) {
+  .children-container {
+    width: auto;
+  }
+}
+@media(max-width: 500px) {
+  .who {
+    font-size: 34px;
+  }
+  .children-container {
+    grid-template-columns: 1fr;
   }
 }
 
