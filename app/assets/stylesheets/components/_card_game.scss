@@ -6,6 +6,7 @@
   margin: 20px 25px 8px;
   font-family: $headers-font;
   font-size: 40px;
+  text-align: center;
   color: white;
 
     p {
@@ -38,9 +39,72 @@
   column-gap: 31px;
   padding: 31px;
   padding-top: 23px;
-  margin-bottom: 15px;
-  // height: 90vh;
-  width: 100vw;
+  margin: 0px auto 15px auto;
+  width: 1000px;
+}
+@media(max-width: 1000px) {
+  .grid-game {
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+  }
+}
+@media(max-width: 800px) {
+  .grid-game {
+    width: 700px;
+  }
+  .head-game {
+    font-size: 31px;
+  }
+}
+@media(max-width: 700px) {
+  .grid-game {
+    width: 675px;
+  }
+}
+@media(max-width: 675px) {
+  .head-game {
+    font-size: 28px;
+  }
+  .grid-game {
+    padding: 23px 10px 10px;
+    width: 625px;
+  }
+}
+@media(max-width: 625px) {
+  .head-game {
+    font-size: 26px;
+  }
+  .head-game .back-arrow, .head-game i {
+    font-size: 40px;
+    padding: 25px 8px;
+  }
+  .grid-game {
+    grid-template-columns: 1fr;
+    width: 350px;
+  }
+}
+@media(max-width: 550px) {
+  .head-game .back-arrow, .head-game i {
+    font-size: 34px;
+    padding: 22px 7px;
+  }
+}
+@media(max-width: 375px) {
+  .head-game {
+    font-size: 24px;
+  }
+  .head-game .back-arrow, .head-game i {
+    font-size: 28px;
+    padding: 20px 6px;
+  }
+  .grid-game {
+    width: 315px;
+  }
+}
+@media(max-width: 320px) {
+  .grid-game {
+    width: 300px;
+  }
 }
 
 .orange-card-game {
