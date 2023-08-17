@@ -11,7 +11,7 @@
   row-gap: 30px;
   column-gap: 30px;
   width: 800px;
-  margin: auto;
+  margin: 0px auto 30px;
   font-size: 2rem;
   transition-duration: 0.1s;
   a {
@@ -99,6 +99,11 @@
   position: absolute;
   bottom: 35px;
   right: 35px;
+}
+@media(max-width: 900px) {
+  #plus-button {
+    display: none;
+  }
 }
 
 .alarm .fa-circle-info {
