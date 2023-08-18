@@ -17,6 +17,21 @@
     margin-top: 20px;
   }
 }
+@media(max-width: 675px) {
+  .container-child-infos {
+    width: 400px;
+  }
+}
+@media(max-width: 500px) {
+  .container-child-infos {
+    width: 350px;
+  }
+}
+@media(max-width: 400px) {
+  .container-child-infos {
+    width: 300px;
+  }
+}
 
 .container-child-results {
   // display: grid;
