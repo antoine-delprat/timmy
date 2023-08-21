@@ -322,6 +322,13 @@ body:has(#game) {
     background-color: #1D8E36;
     border-radius: 20px;
 
+    .modal-first-line {
+      margin: 3rem 0px;
+    }
+    .modal-second-line {
+      margin: 3rem 0px;
+    }
+
     &:after {
       position: fixed;
       content: "";
@@ -371,6 +378,53 @@ body:has(#game) {
       background-color: $timmy-orange;
       color: white;
       font-size: 55px;
+    }
+  }
+}
+
+@media(max-width: 915px) {
+  #cardboard .line {
+    max-height: 100px;
+  }
+  #cardboard .card {
+    width: 80px;
+    height: 80px;
+  }
+  #modal-bloc #modal-win {
+    width: 600px;
+    height: 400px;
+    .modal-first-line {
+      margin: 2rem 0px 0px;
+    }
+    .modal-second-line {
+      margin: 1rem;
+    }
+  }
+}
+@media(max-width: 700px) {
+  #cardboard .line {
+    max-height: 80px;
+  }
+  #cardboard .card {
+    width: 60px;
+    height: 60px;
+  }
+  #modal-bloc #modal-win {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media(max-width: 600px) {
+  #modal-bloc #modal-win {
+    width: 350px;
+    height: 400px;
+    .card {
+      width: 100px;
+      height: 100px;
+      margin: 0px 25px 0px 0px;
+    }
+    .modal-second-line {
+      margin: 2rem;
     }
   }
 }
